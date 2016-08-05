@@ -11,32 +11,17 @@
       </div>
       <nav class="main-navigation">
         <ul>
-          <li>
-              <a href="#">Каталог</a>
-          </li>
-          <ul>
-            <li>
-              <a href="#">Новинки</a>
-            </li>
-            <li>
-              <a href="#">Сливочное</a>
-            </li>
-            <li>
-              <a href="#">Щербеты</a>
-            </li>
-            <li>
-              <a href="#">Фруктовый лед</a>
-            </li>
-            <li>
-              <a href="#">Мелорин</a>
-            </li>
-          </ul>
-          <li>
-              <a href="#">Оплата и доставка</a>
-          </li>
-          <li>
-              <a href="#">О Компании</a>
-          </li>
+          <li><a href="#">Каталог</a>
+            <ul>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>          
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">О Компании</a></li>
         </ul>      
       </nav>
       <div class="search">Поиск</div>
@@ -44,34 +29,34 @@
         <input type="search" name="search" placeholder="Что ищем?">
       </form>      
       <div class="login">Вход</div>
-      <form class="login-form" action="">
-         <input type="email" name="login-email" value="" placeholder="Электронная почта">
-         <input type="password" name="login-password" value="" placeholder="Пароль">
-         <a class="btn" href="#">Войти</a>
-         <a href="#">Забыли пароль?</a>
-         <a href="#">Новая регистрация</a>
-      </form>
+        <form class="login-form" action="">
+          <input type="email" name="login-email" value="" placeholder="Электронная почта">
+          <input type="password" name="login-password" value="" placeholder="Пароль">
+          <a class="btn" href="#">Войти</a>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
       <div class="basket">Пусто</div>
-      <p>С 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+      <div class="mode">С 10 до 20, ежедневно</div>
+        <div class="phone">8 812 450-25-25</div>
     </header>
     <main class="container">      
       <div class="slider">
-        <div class="slide-green">
+        <div class="slide-first">
           <figure>
             <img src="" width="647" height="584">
               <figcaption>Крем-брюле и пломбир с малиновым джемом</figcaption>
           </figure>
           <a class="btn" href="#">Давайте оба!</a>
         </div>
-        <div class="slide-blue">
+        <div class="slide-second">
           <figure>
             <img src="" width="644" height="582">
               <figcaption>Шоколадный пломбир и лимонный сорбет</figcaption>
           </figure>
           <a class="btn" href="#">Давайте оба!</a>
         </div>
-        <div class="slide-brown">
+        <div class="slide-third">
           <figure>
             <img src="" width="639" height="582">
               <figcaption>Пломбир с помадкой и клубничный щербет</figcaption>
@@ -82,49 +67,50 @@
         <input type="radio" name="blue">
         <input type="radio" name="brown">
       </div>
-      <div class="promo promo-jam">
-        <h2>Малинка даром!</h2>
-        <p>При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варень бесплатно.</p>
-        <div class="promo-btn">
-          <a class="btn" href="#">Хочу варенье!</a>
+      <section class="promo">
+        <div class="promo-jam">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варень бесплатно.</p>
+          <div class="promo-btn">
+            <a class="btn" href="#">Хочу варенье!</a>
+          </div>
         </div>
-      </div>
-      <div class="promo promo-chocolate">
-        <h2>Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-        <div class="promo-btn">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+          <div class="promo-btn">
             <a class="btn" href="#">Хочу шоколадки!</a>
+          </div>
         </div>
-      </div>
+      </section>
       <div class="popular">
-        <div class="popular-item">
+        <article class="popular-item">
           <figure>
             <img src="" width="267" height="267">
             <figcaption><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>            
           </figure>
           <a class="btn" href="#">Быстрый просмотр</a>
-        </div>
-        <div class="popular-item">
+        </article>
+        <article class="popular-item">
           <figure>
             <img src="" width="267" height="267">
               <figcaption><a href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
           </figure>
           <a class="btn" href="#">Быстрый просмотр</a>
-        </div>
-        <div class="popular-item">
+        </article>
+        <article class="popular-item">
           <figure>
             <img src="" width="267" height="267">
               <figcaption><a href="#">Сливочно-клубниное с присыпкой из белого шоколада</a></figcaption>
           </figure>
           <a class="btn" href="#">Быстрый просмотр</a>
-        </div>
-        <div class="popular-item">
+        </article>
+        <article class="popular-item">
           <figure>
             <img src="" width="267" height="267">
               <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
           </figure>
           <a class="btn" href="#">Быстрый просмотр</a>
-        </div>
+        </article>
       </div>
       <div class="feature">
         <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
@@ -140,21 +126,23 @@
         <div class="feature-item">
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растать в пути и позволяет сохранить превосходный вкус.</p>
         </div>
-      </div>      
-      <div class="posts-new">
-        <p>Новое в нашем блоге</p>
-        <header class="post-header">
-          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-        </header>
-      </div>     
-      <div class="delivery">
-         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-        <form class="form-delivery" action="/gllace-mail" method="post"> 
-          <input type="email" name="email" value="" placeholder="Электронная почта">
-          <button class="btn" type="button">Отправить</button>
-        </form>
       </div>
-      <div class="map-and-contacts">
+      <section class="posts">
+        <div class="posts-new">
+          <p>Новое в нашем блоге</p>
+          <header class="post-header">
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </header>
+        </div>     
+        <div class="delivery">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
+          <form class="form-delivery" action="/gllace-mail" method="post"> 
+            <input type="email" name="email" value="" placeholder="Электронная почта">
+            <button class="btn" type="button">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="map-and-contacts">
         <div class="map">
           <img src="" width="1200" height="430" alt="map">
         </div>
@@ -176,7 +164,7 @@
              <button class="feedback-btn" type="button">Отправить</button>
           </form>
         </div>
-      </div>      
+      </section>      
     </main>
     <footer class="main-footer">
       <div class="footer-social">
@@ -185,20 +173,12 @@
         <a class="social-btn social-btn-fb" href="#">Facebook</a>
         <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
       </div>
-      <div class="footer-menu">
+      <div class="footer-links">
         <ul>
-          <li>
-            <a href="#">Для поставщиков</a>
-          </li>
-          <li>
-            <a href="#">Наши документы</a>
-          </li>
-          <li>
-            <a href="#">О производстве</a>
-          </li>
-          <li>
-            <a href="#">Экологические стандарты</a>
-          </li>
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
       <div class="copyright">
