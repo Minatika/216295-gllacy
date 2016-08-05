@@ -6,14 +6,31 @@
   </head>
   <body>
     <header class="main-header">
-     <div class="logo">
-         <img src="" width="" height="" alt="Глейси">
-     </div>
+      <div class="header-logo">
+        <img src="" width="154" height="64" alt="Глейси">
+      </div>
       <nav class="main-navigation">
         <ul>
           <li>
               <a href="#">Каталог</a>
           </li>
+          <ul>
+            <li>
+              <a href="#">Новинки</a>
+            </li>
+            <li>
+              <a href="#">Сливочное</a>
+            </li>
+            <li>
+              <a href="#">Щербеты</a>
+            </li>
+            <li>
+              <a href="#">Фруктовый лед</a>
+            </li>
+            <li>
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
           <li>
               <a href="#">Оплата и доставка</a>
           </li>
@@ -25,49 +42,78 @@
       <input type="search" name="search">
       <a class="login" href="#">Вход</a>
       <a class="basket" href="#">Корзина</a>
-    </header>
-    <main>
       <p>С 10 до 20, ежедневно</p>
       <p>8 812 450-25-25</p>
-      <div class="slider"></div>
+    </header>
+    <main>      
+      <div class="slider">
+        <div class="slide-green">
+          <figure>
+            <img src="" width="647" height="584">
+              <figcaption>Крем-брюле и пломбир с малиновым джемом</figcaption>
+          </figure>
+          <a class="btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide-blue">
+          <figure>
+            <img src="" width="644" height="582">
+              <figcaption>Шоколадный пломбир и лимонный сорбет</figcaption>
+          </figure>
+          <a class="btn" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide-brown">
+          <figure>
+            <img src="" width="639" height="582">
+              <figcaption>Пломбир с помадкой и клубничный щербет</figcaption>
+          </figure>
+          <a class="btn" href="#">Давайте оба!</a>
+        </div>
+        <input type="radio" name="green" checked>
+        <input type="radio" name="blue">
+        <input type="radio" name="brown">
+      </div>
       <div class="promo promo-jam">
         <h2>Малинка даром!</h2>
         <p>При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варень бесплатно.</p>
         <div class="promo-btn">
-          <a href="#">Хочу варенье!</a>
+          <a class="btn" href="#">Хочу варенье!</a>
         </div>
       </div>
       <div class="promo promo-chocolate">
         <h2>Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
         <div class="promo-btn">
-            <a href="#">Хочу шоколадки!</a>
+            <a class="btn" href="#">Хочу шоколадки!</a>
         </div>
       </div>
       <div class="popular">
         <div class="popular-item">
           <figure>
-            <img src="">
-            <figcaption><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
+            <img src="" width="267" height="267">
+            <figcaption><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>            
           </figure>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="popular-item">
           <figure>
-            <img src="">
+            <img src="" width="267" height="267">
               <figcaption><a href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
           </figure>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="popular-item">
           <figure>
-            <img src="">
+            <img src="" width="267" height="267">
               <figcaption><a href="#">Сливочно-клубниное с присыпкой из белого шоколада</a></figcaption>
           </figure>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </div>
-        <div class="popular-item">
+        <div class="popular-item" width="267" height="267">
           <figure>
             <img src="">
               <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
           </figure>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </div>
       </div>
       <div class="feature">
@@ -84,17 +130,64 @@
         <div class="feature-item">
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растать в пути и позволяет сохранить превосходный вкус.</p>
         </div>
+      </div>      
+      <div class="posts-new">
+        <p>Новое в нашем блоге</p>
+        <header class="post-header">
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </header>
+      </div>     
+      <div class="delivery">
+         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
+        <form class="form-delivery" action="/gllace-mail" method="post"> 
+          <input type="email" name="email" value="" placeholder="Электронная почта">
+          <button class="btn" type="button">Отправить</button>
+        </form>
       </div>
-      <div class="posts">Новое в нашем блоге</div>
-      <div class="delivery">Рассылка</div>
-      <div class="map">Карта</div>
-      <div class="contacts">Контакты</div>
+      <div class="map-and-contacts">
+        <div class="map">
+          <img src="" width="1200" height="430" alt="map">
+        </div>
+        <div class="contacts">
+          <p>Адрес главного офиса и офлайн магазина:</p>
+          <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p>Для заказов по телефону:</p>
+          <p>8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+          <div class="contacts-btn">
+            <a class="btn" href="#">Форма обратной связи</a>
+          </div>
+        </div>
+      </div>      
     </main>
     <footer class="main-footer">
-      <div class="social">Мы в соц. сетях</div>
-      <div class="documents">Ссылки на документы</div>
-      <div class="copyright">Копирайт</div>
+      <div class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Twitter</a>
+        <a class="social-btn social-btn-in" href="#">Instagram</a>
+        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+        <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li>
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <div class="copyright-logo">
+          <img src="" alt="html academy" width="108" height="38">
+        </div>
+        <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2016</p>
+      </div>
     </footer>
-<!--    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
   </body>
 </html>
