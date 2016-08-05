@@ -39,8 +39,18 @@
           </li>
         </ul>      
       </nav>
-      <input type="search" name="search">
-      <a class="login" href="#">Вход</a>
+      <div class="search">Поиск</div>
+      <form class="search-form" action="" >
+        <input type="search" name="search" placeholder="Что ищем?">
+      </form>      
+      <div class="login">Вход</div>
+      <form class="login-form" action="">
+         <input type="email" name="login-email" value="" placeholder="Электронная почта">
+         <input type="password" name="login-password" value="" placeholder="Пароль">
+         <a class="btn" href="#">Войти</a>
+         <a href="#">Забыли пароль?</a>
+         <a href="#">Новая регистрация</a>
+      </form>      
       <a class="basket" href="#">Корзина</a>
       <p>С 10 до 20, ежедневно</p>
       <p>8 812 450-25-25</p>
@@ -156,6 +166,15 @@
           <div class="contacts-btn">
             <a class="btn" href="#">Форма обратной связи</a>
           </div>
+        </div>
+        <div class="feedback">
+          <h2>Мы обязательно вам ответим!</h2>
+          <form action="" class="feedback-form" method="post">
+             <input type="text" name="fullname" value="" placeholder="Как вас зовут?">
+             <input type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа?">
+             <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
+             <button class="feedback-btn" type="button">Отправить</button>
+          </form>
         </div>
       </div>      
     </main>
