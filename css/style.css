@@ -119,6 +119,7 @@ h3 {
   width: 1146px;
   min-height: 229px;
   padding: 0 27px;
+  margin-bottom: 40px;
   background-color: #ee6b8a;
 }
 
@@ -137,4 +138,34 @@ h3 {
   min-height: 229px;
   border-radius: 15px;
   background: url("../img/chocolate.jpg") no-repeat;
+}
+
+.popular {
+  width: 1146px;
+  min-height: 300px;
+  margin: 0 auto;
+  background-color: #7af5d4;
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 267px;
+  vertical-align: top;
+  margin-right: 26px;
+  background-color: #fbde98;
+  font-size: 16px;
+}
+
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item figure {
+  width: 267px;
+  margin: 0;
+}
+
+.catalog-item img {
+  border-radius: 50%;
 }
