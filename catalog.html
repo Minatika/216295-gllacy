@@ -2,62 +2,67 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Глейси</title>
 </head>
 <body>
   <header class="main-header">
-    <div class="header-logo">
-      <a href="index.html">
-        <img src="img/header-logo.svg" width="154" height="64" alt="Глейси">
-      </a>
+    <div class="container clearfix">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/header-logo.svg" width="154" height="64" alt="Глейси">
+        </a>
+      </div>
+      <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">О Компании</a></li>
+          </ul>
+        </nav>
+      <div class="user-block">
+        <div class="search">Поиск</div>
+        <form class="search-form" action="" >
+          <input type="search" name="search" placeholder="Что ищем?">
+        </form>
+        <div class="login">Вход</div>
+        <form class="login-form" action="">
+          <input type="email" name="login-email" value="" placeholder="Электронная почта">
+          <input type="password" name="login-password" value="" placeholder="Пароль">
+          <a class="btn" href="#">Войти</a>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+        <div class="basket">2 товара</div>
+        <div class="basket-full">
+          <form action="basket-form">
+            <table class="basket-product">
+              <tr>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х 200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг х 300 руб.</td>
+                <td>450 руб.</td>
+              </tr>
+              <tr>
+                <td colspan="2">Итого:</td>
+                <td>750 руб.</td>
+              </tr>
+            </table>
+            <a class="btn" href="#">Оформить заказ</a>
+          </form>
+        </div>
+      </div>
+      <div class="mode">С 10 до 20, ежедневно</div>
+      <div class="phone">8 812 450-25-25</div>
     </div>
-    <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Оплата и доставка</a></li>
-          <li><a href="#">О Компании</a></li>
-        </ul>
-      </nav>
-    <div class="search">Поиск</div>
-    <form class="search-form" action="" >
-      <input type="search" name="search" placeholder="Что ищем?">
-    </form>
-    <div class="login">Вход</div>
-    <form class="login-form" action="">
-      <input type="email" name="login-email" value="" placeholder="Электронная почта">
-      <input type="password" name="login-password" value="" placeholder="Пароль">
-      <a class="btn" href="#">Войти</a>
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
-    </form>
-    <div class="basket">2 товара</div>
-    <div class="basket-full">
-      <form action="basket-form">
-        <table class="basket-product">
-          <tr>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг х 200 руб.</td>
-            <td>300 руб.</td>
-          </tr>
-          <tr>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг х 300 руб.</td>
-            <td>450 руб.</td>
-          </tr>
-          <tr>
-            <td colspan="2">Итого:</td>
-            <td>750 руб.</td>
-          </tr>
-        </table>
-        <a class="btn" href="#">Оформить заказ</a>
-      </form>
-    </div>
-    <p>С 10 до 20, ежедневно</p>
-    <p>8 812 450-25-25</p>
   </header>
-  <main class="container">
-    <div class="navigation-links">
+  <main class="container clearfix">
+    <div class="breadcrumbs">
       <a href="#">Главная</a>
       <a href="#">Каталог</a>
       <a href="#">Сливочное</a>
@@ -208,25 +213,27 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="footer-social">
-      <a class="social-btn social-btn-tw" href="#">Twitter</a>
-      <a class="social-btn social-btn-in" href="#">Instagram</a>
-      <a class="social-btn social-btn-fb" href="#">Facebook</a>
-      <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
-    </div>
-    <div class="footer-links">
-      <ul>
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <div class="copyright-logo">
-        <img src="img/footer-logo.svg" alt="html academy" width="108" height="38">
+    <div class="container clearfix">
+      <div class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Twitter</a>
+        <a class="social-btn social-btn-in" href="#">Instagram</a>
+        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+        <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
       </div>
-      <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2016</p>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <div class="copyright-logo">
+          <img src="img/footer-logo.svg" alt="html academy" width="108" height="38">
+        </div>
+        <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2016</p>
+      </div>
     </div>
   </footer>
 </body>
