@@ -218,3 +218,29 @@ h3 {
   background-color: #ffffff;
   color: #5a5a5a;
 }
+
+.feedback {
+  display: none;
+}
+
+.map-and-contacts {
+  width: 1200px;
+  height: 430px;
+  background-color: chartreuse;
+}
+
+.map {
+  position: relative;
+}
+
+.contacts {
+  position: absolute;
+  width: 236px;
+  min-height: 253px;
+  right: 27px;
+  top: 63px;
+  padding: 33px 26px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #323232;
+}
