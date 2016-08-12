@@ -175,7 +175,46 @@ h3 {
   width: 1106px;
   min-height: 247px;
   margin: 0 auto;
+  margin-bottom: 40px;
   padding: 30px 20px;
   border-radius: 15px;
   background: url("../img/wafer.jpg") repeat;
+}
+
+.posts {
+  width: 1146px;
+  min-height: 220px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 1px;
+  background-color: #af78ce;
+}
+
+.posts-new {
+  float: left;
+  width: 520px;
+  min-height: 160px;
+  padding: 30px 20px;
+  margin-right: 26px;
+  border-radius: 15px;
+  background: url("../img/post-strawberry.jpg") no-repeat;
+}
+
+
+.delivery-border {
+  float: right;
+  width: 560px;
+  min-height: 220px;
+  background: url("../img/post.png") repeat;
+  border-radius: 15px;
+}
+
+/*Через border-image и паттерн не получилось, мозможно стоит сохранить почтовое изображение полностью. Рамка не выравнивается по вертикали, переделать!!!*/
+
+.delivery {
+  width: 546px;
+  min-height: 206px;
+  margin: auto;
+  background-color: #ffffff;
+  color: #5a5a5a;
 }
