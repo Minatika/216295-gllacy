@@ -144,6 +144,7 @@ h3 {
   width: 1146px;
   min-height: 300px;
   margin: 0 auto;
+  margin-bottom: 40px;
   background-color: #7af5d4;
   font-size: 0;
 }
@@ -168,4 +169,13 @@ h3 {
 
 .catalog-item img {
   border-radius: 50%;
+}
+
+.feature {
+  width: 1106px;
+  min-height: 247px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background: url("../img/wafer.jpg") repeat;
 }
