@@ -30,13 +30,13 @@ h3 {
 }
 
 .main-header {
-  min-height: 115px;
+  min-height: 114px;
   background-color: #88d17e;
 }
 
-.header-container {
+.container {
   width: 1200px;
-  min-height: 115px;
+  min-height: 104px;
   margin: 0 auto;
   padding-top: 10px;
   background-color: #7c98ca;
@@ -97,6 +97,44 @@ h3 {
   background-color: #7cecf6;
 }
 
-.container {
+/*Второй и третий слайдеры скрыты временно, разобраться по https://htmlacademy.ru/courses/76/run/20 */
+
+.slide-first {
+  width: 665px;
+  min-height: 584px;
+  margin: 0 auto;
+  margin-top: -40px;
+  background-color: #f1f097;
+}
+
+.slide-second {
+  display: none;
+}
+
+.slide-third {
+  display: none;
+}
+
+.promo {
   width: 1146px;
+  min-height: 229px;
+  padding: 0 27px;
+  background-color: #ee6b8a;
+}
+
+.promo-jam {
+  float: left;
+  width: 560px;
+  min-height: 229px;
+  margin-right: 26px;
+  border-radius: 15px;
+  background: url("../img/jam.jpg") no-repeat;
+}
+
+.promo-chocolate {
+  float: right;
+  width: 560px;
+  min-height: 229px;
+  border-radius: 15px;
+  background: url("../img/chocolate.jpg") no-repeat;
 }
