@@ -13,6 +13,9 @@ h1, h2 {
   color: #ffffff;
   font-weight: bold;
   font-family: "Roboto", "Arial", sans-serif;
+  margin-left: 27px;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 h3 {
@@ -83,6 +86,10 @@ h3 {
   display: none;
 }
 
+.basket-full {
+  display: none;
+}
+
 .mode {
   width: 151px;
   margin-left: auto;
@@ -140,9 +147,35 @@ h3 {
   background: url("../img/chocolate.jpg") no-repeat;
 }
 
+.breadcrumbs {
+  width: 560px;
+  min-height: 16px;
+  margin-top: -14px;
+  margin-left: 27px;
+  margin-bottom: 10px;
+  background-color: coral;
+}
+
+.filters {
+  width: 1146px;
+  min-height: 132px;
+  margin: 0 auto;
+  background-color: darkgray;
+  margin-bottom: 35px;
+}
+
 .popular {
   width: 1146px;
   min-height: 300px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-color: #7af5d4;
+  font-size: 0;
+}
+
+.catalog {
+  width: 1146px;
+  min-height: 1050px;
   margin: 0 auto;
   margin-bottom: 40px;
   background-color: #7af5d4;
@@ -154,11 +187,12 @@ h3 {
   width: 267px;
   vertical-align: top;
   margin-right: 26px;
+  margin-bottom: 40px;
   background-color: #fbde98;
   font-size: 16px;
 }
 
-.catalog-item:last-child {
+.catalog-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -169,6 +203,14 @@ h3 {
 
 .catalog-item img {
   border-radius: 50%;
+}
+
+.paginator {
+  width: 190px;
+  min-height: 27px;
+  margin-left: auto;
+  margin-right: 27px;
+  background-color: darkseagreen;
 }
 
 .feature {
@@ -279,5 +321,6 @@ h3 {
   float: right;
   width: 267px;
   min-height: 60px;
+  margin-right: 27px;
   background-color: cornsilk;
 }
