@@ -104,22 +104,83 @@ h3 {
   background-color: #7cecf6;
 }
 
-/*Второй и третий слайдеры скрыты временно, разобраться по https://htmlacademy.ru/courses/76/run/20 */
+/*Выполнено отображение первого слайда, переходы между слайдами не работают*/
+
+.slider {
+  width: 1200px;
+  margin-top: -40px;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-slides {
+  position: relative;
+  width: 300%;
+  background-color: burlywood;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+/*
+.slider figcaption {
+  position: absolute;
+  width: 670px;
+  top: 310px;
+  left: 269px;
+  font-size: 60px;
+  font-weight: bold;
+}
+*/
 
 .slide-first {
-  width: 665px;
+  float: left;
+  width: 1200px;
   min-height: 584px;
-  margin: 0 auto;
-  margin-top: -40px;
   background-color: #f1f097;
 }
 
+.slide-first figure {
+  width: 670px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .slide-second {
-  display: none;
+  float: left;
+  width: 1200px;
+  background-color: darkseagreen;
 }
 
 .slide-third {
-  display: none;
+  float: left;
+  width: 1200px;
+  background-color: darkkhaki;
+}
+
+.slider-controls label {
+  display: inline-block;
+  position: absolute;
+  top: 481px;
+  left: 36px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
+  margin: 0 8px;
+  cursor: pointer;
+  background-color: #849d8f;
+}
+
+#first:checked ~ .slider-controls label[for="first"], #second:checked ~ .slider-controls label[for="second"], #third:checked ~ .slider-controls label[for="third"] {
+  background-color: #ffffff;
 }
 
 .promo {
@@ -252,8 +313,6 @@ h3 {
   background: url("../img/post.png") repeat;
   border-radius: 15px;
 }
-
-/*Через border-image и паттерн не получилось, мозможно стоит сохранить почтовое изображение полностью. Рамка не выравнивается по вертикали, переделать!!!*/
 
 .delivery {
   position: absolute;
