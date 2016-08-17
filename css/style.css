@@ -48,7 +48,7 @@ h3 {
 .header-logo {
   float: left;
   margin-left: 20px;
-  margin-right: 30px;
+  margin-right: 16px;
   background-color: #77dfeb;
 }
 
@@ -64,10 +64,69 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
+}
+
+.main-menu > li {
+  position: relative;
+  display: inline-block;
+  margin-right: 1px;
+  margin-top: 14px;
+  white-space: nowrap;
+}
+
+.main-menu a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .main-menu .sub-menu {
+  position: absolute;
   display: none;
+  left: -7px;
+  top: 37px;
+  width: 142px;
+  min-height: 171px;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.sub-menu a {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 5px 0;
+  color: #323232;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 8px 20px;
+}
+
+.sub-menu .new {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-menu a:hover {
+  border-radius: 14px;
+  background: #f7f6f3;
+  color: #333333;
+}
+
+.main-menu > li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu a:hover {
+  background: #fbded7;
 }
 
 .user-block {
