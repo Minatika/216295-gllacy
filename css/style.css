@@ -84,11 +84,19 @@ h3 {
   color: #ffffff;
 }
 
+.wrapper-sub-menu {
+  position: absolute;
+  left:-7px;
+  width: 142px;
+  min-height: 176px;
+
+}
+
 .main-menu .sub-menu {
   position: absolute;
   display: none;
   left: -7px;
-  top: 37px;
+  top: 5px;
   width: 142px;
   min-height: 171px;
   z-index: 100;
@@ -98,7 +106,6 @@ h3 {
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
-
 
 .sub-menu a {
   font-size: 14px;
@@ -127,6 +134,7 @@ h3 {
 
 .sub-menu a:hover {
   background: #fbded7;
+  border-radius: 0;
 }
 
 .user-block {
