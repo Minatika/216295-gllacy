@@ -459,31 +459,31 @@ h3 {
 
 .social-btn-tw:hover, .social-btn-in:hover, .social-btn-fb:hover, .social-btn-vk:hover {
   opacity: 1;
-  border: 3px solid rgba(255, 255, 255, 0.71);
+  border: 4px solid rgba(255, 255, 255, 0.71);
 }
 
 .social-btn-tw:active {
   background: url(../img/twitter-active.svg) no-repeat;
   box-shadow: inset 0 2px 1px 0 #888888;
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 4px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-btn-in:active {
   background: url(../img/instagram-active.svg) no-repeat;
   box-shadow: inset 0 2px 1px 0 #888888;
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 4px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-btn-fb:active {
   background: url(../img/facebook-active.svg) no-repeat;
   box-shadow: inset 0 2px 1px 0 #888888;
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 4px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-btn-vk:active {
   background: url(../img/vkontakte-active.svg) no-repeat;
   box-shadow: inset 0 2px 1px 0 #888888;
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 4px solid rgba(255, 255, 255, 0.7);
 }
 
 .footer-links {
