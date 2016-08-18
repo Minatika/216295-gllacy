@@ -34,7 +34,6 @@ h3 {
 
 .main-header {
   min-height: 74px;
-  background-color: #88d17e;
 }
 
 .container {
@@ -43,14 +42,12 @@ h3 {
   min-height: 74px;
   margin: 0 auto;
   padding-top: 10px;
-  background-color: #7c98ca;
 }
 
 .header-logo {
   float: left;
   margin-left: 20px;
   margin-right: 16px;
-  background-color: #77dfeb;
 }
 
 .main-navigation {
@@ -58,7 +55,6 @@ h3 {
   width: 676px;
   min-height: 64px;
   margin-right: 26px;
-  background-color: #77dfeb;
 }
 
 .main-menu {
@@ -142,7 +138,57 @@ h3 {
   width: 267px;
   min-height: 64px;
   margin-right: 27px;
-  background-color: #77dfeb;
+  font-size: 0;
+}
+
+.user-block div {
+  display: inline-block;
+  height: 32px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 13px;
+  vertical-align: top;
+}
+
+.user-block .search {
+  width: 32px;
+  background: url("../img/loupe.svg") no-repeat 50% 50%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-block .login {
+  width: 77px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-top: 6px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+.login::before {
+  content: url("../img/login.svg");
+  padding-right: 9px;
+}
+
+.user-block .basket {
+  width: 102px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 0;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-top: 6px;
+  padding-left: 15px;
+}
+
+.basket::before {
+  content: url("../img/basket.svg");
+  padding-right: 9px;
 }
 
 .search-form {
@@ -167,7 +213,6 @@ h3 {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
-  background-color: darkcyan;
   z-index: 40
 }
 
@@ -178,7 +223,6 @@ h3 {
   width: 167px;
   margin-left: auto;
   margin-right: 27px;
-  background-color: darkblue;
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
