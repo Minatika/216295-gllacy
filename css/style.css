@@ -280,9 +280,9 @@ h3 {
 .breadcrumbs {
   width: 560px;
   min-height: 16px;
-  margin-top: -14px;
+  margin-top: 6px;
   margin-left: 27px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   background-color: coral;
 }
 
