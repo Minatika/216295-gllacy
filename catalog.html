@@ -15,9 +15,9 @@
         </a>
       </div>
       <nav class="main-navigation">
-          <ul>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Оплата и доставка</a></li>
+          <ul class="main-menu">
+            <li><a class="opened" href="#">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
           </ul>
         </nav>
@@ -79,19 +79,19 @@
         </select>
         <label for="price">Цена: 100 руб. - 500 руб.</label>
         <input type="range" name="price" id="price" min="100" max="500">
-        <fieldset class="fatness">
-          <legend>Жирность:</legend>
+        <div class="fatness">
+          <h4>Жирность:</h4>
           <label for="fatness-0">0%</label>
-          <input type="radio" name="fatness-0" id="fatness-0">
+          <input type="radio" name="fatness" id="fatness-0">
           <label for="fatness-10">до 10%</label>
-          <input type="radio" name="fatness-10" id="fatness-10">
+          <input type="radio" name="fatness" id="fatness-10">
           <label for="fatness-30">до 30%</label>
-          <input type="radio" name="fatness-30" id="fatness-30">
+          <input type="radio" name="fatness" id="fatness-30">
           <label for="fatness-30+">свыше 30%</label>
-          <input type="radio" name="fatness-30+" id="fatness-30+">
-        </fieldset>
-        <fieldset class="fillers">
-          <legend>Наполнители:</legend>
+          <input type="radio" name="fatness" id="fatness-30+">
+        </div>
+        <div class="fillers">
+          <h4>Наполнители:</h4>
           <label>
             <input type="checkbox" name="chocolate">
             шоколадные
@@ -112,7 +112,7 @@
             <input type="checkbox" name="jams">
             джемы
           </label>
-        </fieldset>
+        </div>
         <a href="#">Применить</a>
       </form>
     </div>
