@@ -33,13 +33,14 @@ h3 {
 }
 
 .main-header {
-  min-height: 114px;
+  min-height: 74px;
   background-color: #88d17e;
 }
 
 .container {
+  position: relative;
   width: 1200px;
-  min-height: 104px;
+  min-height: 74px;
   margin: 0 auto;
   padding-top: 10px;
   background-color: #7c98ca;
@@ -70,8 +71,7 @@ h3 {
 .main-menu > li {
   position: relative;
   display: inline-block;
-  margin-right: 1px;
-  margin-top: 14px;
+  margin-top: 12px;
   white-space: nowrap;
 }
 
@@ -150,17 +150,31 @@ h3 {
 }
 
 .mode {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
   width: 151px;
   margin-left: auto;
   margin-right: 27px;
-  background-color: #cdf3f6;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  background-color: darkcyan;
+  z-index: 40
 }
 
 .phone {
-  width: 166px;
+  position: absolute;
+  right: 0;
+  bottom: -33px;
+  width: 167px;
   margin-left: auto;
   margin-right: 27px;
-  background-color: #7cecf6;
+  background-color: darkblue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+  z-index: 30;
 }
 
 /*Выполнено отображение первого слайда, переходы между слайдами не работают*/
@@ -168,7 +182,7 @@ h3 {
 .slider {
   width: 1200px;
   min-height: 582px;
-  margin-top: -40px;
+/*  margin-top: -40px;*/
 }
 
 .slider input[type="radio"] {
@@ -199,7 +213,7 @@ h3 {
 .slide-first, .slide-second, .slide-third {
   float: left;
   width: 1200px;
-  background-color: #f1f097;
+/*  background-color: #f1f097;*/
 }
 
 .slide-first figure {
