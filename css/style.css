@@ -176,53 +176,147 @@ h3 {
   font-size: 0;
 }
 
-.user-block div {
+.user-block-item {
   position: relative;
   display: inline-block;
   height: 32px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 13px;
+  margin: 13px 5px;
+  padding: 8px 16px;
   vertical-align: top;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .user-block .search {
+  position: relative;
   width: 32px;
-  background: url("../img/loupe.svg") no-repeat 50% 50%;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0;
+}
+
+.user-block .search:before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  content: url("../img/loupe.svg");
+}
+
+.wrapper-search-form {
+  position: absolute;
+  min-height: 88px;
+  width: 341px;
+  top: 100%;
+  right: 0;
+}
+
+.search-form {
+  position: absolute;
+  display: none;
+  min-height: 84px;
+  width: 341px;
+  top: 4px;
+  right: 0;
+  z-index: 50;
+  border-radius: 5px;
+  background: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search-form input[type="search"] {
+  width: 310px;
+  height: 44px;
+  margin: 20px 15px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+  padding: 0 15px;
+  color: #323232;
+}
+
+.user-block-item:hover {
+  background-color: rgba(248, 247, 244, 1);
+  color: #323232;
+}
+
+.user-block .search:hover::before {
+  content: url("../img/loupe-dark.svg");
+}
+
+.user-block-item:hover .search-form {
+  display: block;
 }
 
 .user-block .login {
-  width: 48px;
+  position: relative;
+  width: 32px;
   height: 16px;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 8px;
   padding-left: 44px;
-  padding-bottom: 8px;
-  vertical-align: top;
 }
 
-.login::before {
+.user-block .login::before {
   position: absolute;
   top: 6px;
   left: 16px;
   content: url("../img/login.svg");
-  padding-right: 9px;
+}
+
+.wrapper-login-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 277px;
+  min-height: 218px;
+}
+
+.login-form {
+  position: absolute;
+  display: none;
+  top: 4px;
+  right: 0;
+  z-index: 50;
+  widows: 277px;
+  min-height: 214px;
+  border-radius: 5px;
+  background: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.login-form input[type="email"], .login-form input[type="password"] {
+  width: 241px;
+  height: 44px;
+  margin: 20px 19px;
+  margin-right: 17px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #d3d3d2;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+.login-form input[type="password"] {
+  margin-top: 0;
+}
+
+.user-block .login:hover::before {
+  content: url("../img/login-dark.svg");
+}
+
+.user-block-item:hover .login-form {
+  display: block;
 }
 
 .user-block .basket {
-  width: 73px;
+  position: relative;
+  width: 57px;
   height: 16px;
   font-size: 14px;
   line-height: 16px;
   margin-right: 0;
-  padding-top: 8px;
   padding-left: 44px;
-  padding-bottom: 8px;
 }
 
 .basket::before {
@@ -233,16 +327,43 @@ h3 {
   padding-right: 9px;
 }
 
-.search-form {
-  display: none;
+.user-block .basket-full {
+  background: #f8f7f4;
+  color: #323232;
 }
 
-.login-form {
-  display: none;
+.basket-full:before {
+  content: url("../img/basket-dark.svg");
+  background: url("../img/basket-full.png") no-repeat 30% 25%;
 }
 
-.basket-full {
+.wrapper-basket-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 540px;
+  min-height: 246px;
+}
+
+.basket-form {
+  position: absolute;
   display: none;
+  top: 4px;
+  right: 0;
+  z-index: 50;
+  width: 540px;
+  min-height: 242px;
+  border-radius: 5px;
+  background: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.user-block .basket:hover::before {
+  content: url("../img/basket-dark.svg");
+}
+
+.user-block .basket-full:hover .basket-form{
+  display: block;
 }
 
 .mode {
@@ -312,7 +433,7 @@ h3 {
 
 .slide-first figure {
   width: 670px;
-  font-size: 60px;
+/*  font-size: 60px;*/
   font-weight: bold;
   margin-top: 0;
   margin-left: auto;
