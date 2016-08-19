@@ -16,7 +16,17 @@
       </div>
       <nav class="main-navigation">
           <ul class="main-menu">
-            <li><a class="opened" href="#">Каталог</a></li>
+            <li><a class="active" href="#">Каталог</a>
+              <div class="wrapper-sub-menu">
+                <ul class="sub-menu">
+                  <li><a class="new" href="#">Новинки</a></li>
+                  <li><a class="active" href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </div>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
           </ul>
@@ -35,27 +45,25 @@
           <a href="#">Новая регистрация</a>
         </form>
         <div class="basket">2 товара</div>
-        <div class="basket-full">
-          <form action="basket-form">
-            <table class="basket-product">
-              <tr>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="2">Итого:</td>
-                <td>750 руб.</td>
-              </tr>
-            </table>
-            <a class="btn" href="#">Оформить заказ</a>
-          </form>
-        </div>
+        <form action="basket-form">
+          <table class="basket-product">
+            <tr>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х 200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х 300 руб.</td>
+              <td>450 руб.</td>
+            </tr>
+            <tr>
+              <td colspan="2">Итого:</td>
+              <td>750 руб.</td>
+            </tr>
+          </table>
+          <a class="btn" href="#">Оформить заказ</a>
+        </form>
       </div>
       <div class="mode">С 10 до 20, ежедневно</div>
       <div class="phone">8 812 450-25-25</div>
