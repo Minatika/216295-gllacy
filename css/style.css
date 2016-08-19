@@ -13,9 +13,7 @@ h1, h2 {
   color: #ffffff;
   font-weight: bold;
   font-family: "Roboto", "Arial", sans-serif;
-  margin-left: 27px;
-  margin-top: 0;
-  margin-bottom: 35px;
+  margin: 0;
 }
 
 h3 {
@@ -464,24 +462,56 @@ h3 {
   min-height: 229px;
   padding: 0 27px;
   margin-bottom: 40px;
-  background-color: #ee6b8a;
 }
 
 .promo-jam {
   float: left;
-  width: 560px;
-  min-height: 229px;
+  position: relative;
+  width: 524px;
+  min-height: 195px;
   margin-right: 26px;
+  padding: 17px 18px;
   border-radius: 15px;
   background: #c52b51 url("../img/jam.jpg") no-repeat;
 }
 
 .promo-chocolate {
   float: right;
-  width: 560px;
-  min-height: 229px;
+  position: relative;
+  width: 524px;
+  min-height: 195px;
+  padding: 17px 18px;
   border-radius: 15px;
   background: #4f2d1c url("../img/chocolate.jpg") no-repeat;
+}
+
+.promo p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  width: 515px;
+}
+
+.promo-btn {
+  position: absolute;
+  height: 46px;
+  float: right;
+  right: 21px;
+  bottom: 23px;
+}
+
+.promo-btn a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 11px 23px;
+  border-radius: 23px;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
 }
 
 .breadcrumbs {
