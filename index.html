@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/roboto.woff2">
+    <link rel="stylesheet" href="fonts/robotomedium.woff2">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -30,19 +32,25 @@
           </ul>
         </nav>
         <div class="user-block">
-          <div class="search"></div>
-          <form class="search-form" action="" >
-            <input type="search" name="search" placeholder="Что ищем?">
-          </form>
-          <div class="login">Вход</div>
-          <form class="login-form" action="">
-            <input type="email" name="login-email" value="" placeholder="Электронная почта">
-            <input type="password" name="login-password" value="" placeholder="Пароль">
-            <a class="btn" href="#">Войти</a>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </form>
-          <div class="basket">Пусто</div>
+          <div class="user-block-item search">
+          <div class="wrapper-search-form">
+            <form class="search-form" action="" >
+              <input type="search" name="search" placeholder="Что ищем?">
+            </form>
+          </div>
+          </div>
+          <div class="user-block-item login">Вход
+            <div class="wrapper-login-form">
+              <form class="login-form" action="">
+                <input type="email" name="login-email" value="" placeholder="Электронная почта">
+                <input type="password" name="login-password" value="" placeholder="Пароль">
+                <a class="btn" href="#">Войти</a>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </form>
+            </div>
+          </div>
+          <div class="user-block-item basket">Пусто</div>
         </div>
         <div class="mode">С 10 до 20, ежедневно</div>
         <div class="phone">8 812 450-25-25</div>
