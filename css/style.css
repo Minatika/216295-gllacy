@@ -760,7 +760,7 @@ h3 {
   width: 334px;
   min-height: 60px;
   margin-left: 107px;
-  margin-right: 26px;
+  margin-right: 145px;
   margin-top: 6px;
   background-color: #849d8f;
 }
@@ -803,9 +803,27 @@ h3 {
 }
 
 .footer-copyright {
+  position: relative;
+  bottom: 9px;
   float: right;
   width: 267px;
   min-height: 60px;
   margin-right: 27px;
-  background-color: cornsilk;
+  background-color: #849d8f;
+  margin-top: 0;
+}
+
+.copyright-logo {
+  margin-left: 80px;
+}
+
+.footer-copyright p {
+  text-align: right;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 1px;
+}
+
+.footer-copyright a {
+  color: #ffffff;
 }
