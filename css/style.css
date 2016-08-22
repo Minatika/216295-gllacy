@@ -501,7 +501,7 @@ h3 {
   bottom: 23px;
 }
 
-.promo-btn a {
+.btn {
   display: block;
   text-decoration: none;
   font-size: 18px;
@@ -510,8 +510,15 @@ h3 {
   font-weight: bold;
   padding: 11px 23px;
   border-radius: 23px;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image: linear-gradient(rgba(255, 255, 255), rgba(0, 0, 0));
   box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+}
+
+.btn:hover {
+  background-image:
+    linear-gradient(rbga(255, 255, 255, 0.2), rbga(255, 255, 255, 0.2));
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 1px 2px 0.00px #ac1000;
 }
 
 .breadcrumbs {
