@@ -88,6 +88,17 @@ h3 {
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.main-menu a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left:14px;
+  right:14px;
+  bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .wrapper-sub-menu {
@@ -841,7 +852,7 @@ h3 {
 }
 
 .contacts-btn a {
-  padding-left: 28px;
+  padding-left: 27px;
 }
 
 .main-footer {
