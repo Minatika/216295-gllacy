@@ -22,7 +22,6 @@ h3 {
   color: #323232;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
-  font-weight: normal;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -83,6 +82,7 @@ h3 {
 
 .wrapper-sub-menu {
   position: absolute;
+  display: none;
   left:-7px;
   width: 142px;
   min-height: 176px;
@@ -91,7 +91,6 @@ h3 {
 
 .main-menu .sub-menu {
   position: absolute;
-  display: none;
   left: -7px;
   top: 5px;
   width: 142px;
@@ -149,7 +148,7 @@ h3 {
   background: #d07058;
 }
 
-.main-menu > li:hover .sub-menu {
+.main-menu > li:hover .wrapper-sub-menu {
   display: block;
 }
 
@@ -177,24 +176,19 @@ h3 {
   font-size: 0;
 }
 
-.user-block-item {
+.search {
   position: relative;
   display: inline-block;
+  width: 32px;
+  padding: 0;
   height: 32px;
   margin: 13px 5px;
-  padding: 8px 16px;
   vertical-align: top;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.user-block .search {
-  position: relative;
-  width: 32px;
-  padding: 0;
-}
-
-.user-block .search:before {
+.search:before {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -203,6 +197,7 @@ h3 {
 
 .wrapper-search-form {
   position: absolute;
+  display: none;
   min-height: 88px;
   width: 341px;
   top: 100%;
@@ -211,7 +206,6 @@ h3 {
 
 .search-form {
   position: absolute;
-  display: none;
   min-height: 84px;
   width: 341px;
   top: 4px;
@@ -235,7 +229,7 @@ h3 {
   color: #323232;
 }
 
-.user-block-item:hover {
+.search:hover {
   background-color: rgba(248, 247, 244, 1);
   color: #323232;
 }
@@ -244,20 +238,26 @@ h3 {
   content: url("../img/loupe-dark.svg");
 }
 
-.user-block-item:hover .search-form {
+.search:hover .wrapper-search-form {
   display: block;
 }
 
-.user-block .login {
+.login {
   position: relative;
   width: 32px;
   height: 16px;
   font-size: 14px;
   line-height: 16px;
-  padding-left: 44px;
+  position: relative;
+  display: inline-block;
+  margin: 13px 5px;
+  padding: 8px 16px 8px 44px;
+  vertical-align: top;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.user-block .login::before {
+.login::before {
   position: absolute;
   top: 6px;
   left: 16px;
@@ -266,6 +266,7 @@ h3 {
 
 .wrapper-login-form {
   position: absolute;
+  display: none;
   top: 100%;
   right: 0;
   width: 277px;
@@ -274,11 +275,10 @@ h3 {
 
 .login-form {
   position: absolute;
-  display: none;
   top: 4px;
   right: 0;
   z-index: 50;
-  widows: 277px;
+  width: 277px;
   min-height: 214px;
   border-radius: 5px;
   background: #f8f7f4;
@@ -286,10 +286,9 @@ h3 {
 }
 
 .login-form input[type="email"], .login-form input[type="password"] {
-  width: 241px;
+  width: 205px;
   height: 44px;
-  margin: 20px 19px;
-  margin-right: 17px;
+  margin: 20px 17px 20px 19px;
   border-radius: 5px;
   font-size: 14px;
   line-height: 24px;
@@ -302,22 +301,34 @@ h3 {
   margin-top: 0;
 }
 
+.login:hover {
+  background-color: rgba(248, 247, 244, 1);
+  color: #323232;
+}
+
 .user-block .login:hover::before {
   content: url("../img/login-dark.svg");
 }
 
-.user-block-item:hover .login-form {
+.login:hover .wrapper-login-form {
   display: block;
 }
 
-.user-block .basket {
+.basket {
   position: relative;
+  display: inline-block;
   width: 57px;
   height: 16px;
   font-size: 14px;
   line-height: 16px;
-  margin-right: 0;
   padding-left: 44px;
+  position: relative;
+  display: inline-block;
+  margin: 13px 0 13px 5px;
+  padding: 8px 16px 8px 44px;
+  vertical-align: top;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .basket::before {
@@ -328,7 +339,7 @@ h3 {
   padding-right: 9px;
 }
 
-.user-block .basket-full {
+.basket-full {
   background: #f8f7f4;
   color: #323232;
 }
@@ -340,6 +351,7 @@ h3 {
 
 .wrapper-basket-form {
   position: absolute;
+  display: none;
   top: 100%;
   right: 0;
   width: 540px;
@@ -348,7 +360,6 @@ h3 {
 
 .basket-form {
   position: absolute;
-  display: none;
   top: 4px;
   right: 0;
   z-index: 50;
@@ -359,11 +370,16 @@ h3 {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.user-block .basket:hover::before {
+.basket:hover::before {
   content: url("../img/basket-dark.svg");
 }
 
-.user-block .basket-full:hover .basket-form{
+.basket:hover {
+  background-color: rgba(248, 247, 244, 1);
+  color: #323232;
+}
+
+.basket-full:hover .wrapper-login-form{
   display: block;
 }
 
