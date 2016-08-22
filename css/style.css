@@ -651,6 +651,7 @@ h3 {
 .feature-item:nth-of-type(odd) {
   margin-right: 26px;
 }
+
 .feature-item p {
   font-size: 16px;
   line-height: 22px;
@@ -664,20 +665,32 @@ h3 {
   margin: 0 auto;
   margin-bottom: 40px;
   padding-top: 1px;
-  background-color: #af78ce;
 }
 
 .posts-new {
   float: left;
   width: 520px;
-  min-height: 160px;
-  padding: 30px 20px;
+  min-height: 176px;
+  padding: 22px 20px;
   margin-right: 26px;
   border-radius: 15px;
   color: #323232;
   background: #ffffff url("../img/post-strawberry.jpg") no-repeat;
 }
 
+.posts-new p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.post-header {
+  margin-top: 5px;
+}
+
+.post-header a {
+  font-weight: bold;
+}
 
 .delivery-border {
   position: relative;
@@ -690,15 +703,56 @@ h3 {
 
 .delivery {
   position: absolute;
-  width: 504px;
-  min-height: 140px;
+  width: 511px;
+  min-height: 154px;
   top: 7px;
   left: 7px;
   margin: auto;
-  padding: 33px 21px;
-  background-color: #ffffff;
+  padding: 27px 20px;
+  padding-right: 15px;
+  background-color: #f8f7f4;
   color: #5a5a5a;
   border-radius: 10px;
+}
+
+.delivery p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  margin: 0;
+}
+
+.form-delivery {
+  width: 100%;
+  min-height: 47px;
+  margin-top: 34px;
+  font-size: 0;
+}
+
+.form-delivery input[type="email"] {
+  display: inline-block;
+  width: 340px;
+  height: 42px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #d3d3d2;
+  vertical-align: middle;
+  padding: 0 13px;
+  margin-top: 1px;
+  vertical-align: top;
+}
+
+.form-delivery input[type="submit"] {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+  border: none;
+  outline: none;
+  padding: 11px 20px;
+  margin-top: 0;
+  margin-left: 10px;
 }
 
 .feedback {
