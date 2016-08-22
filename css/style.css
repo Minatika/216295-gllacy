@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../font/robotomedium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto.woff2") format('woff2');
+}
+
 body {
   font-size: 14px;
   line-height: 1;
@@ -379,7 +389,7 @@ h3 {
   color: #323232;
 }
 
-.basket-full:hover .wrapper-login-form{
+.basket-full:hover .wrapper-basket-form {
   display: block;
 }
 
@@ -466,7 +476,7 @@ h3 {
   height: 19px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 2 0 rgba(0, 0, 0, 0.8);
   margin: 0 8px;
   cursor: pointer;
   background-color: #849d8f;
@@ -530,12 +540,12 @@ h3 {
   padding: 11px 23px;
   border-radius: 23px;
   background-image:linear-gradient(#f26843, #e74a35);
-  box-shadow: 0 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 
 .btn:hover {
   background-image:linear-gradient(#f58669, #ec6f5e);
-  box-shadow: 0px 1px 2px 0.00px #ac1000;
+  box-shadow: 0 1px 2px 0.0 #ac1000;
 }
 
 .btn:active {
@@ -592,10 +602,7 @@ h3 {
   width: 267px;
   min-height: 362px;
   vertical-align: top;
-  padding-top: 6px;
-  padding-left: 13px;
-  padding-bottom: 35px;
-  padding-right: 13px;
+  padding: 6px 13px 35px 13px;
   background-color: #fbde98;
   font-size: 16px;
 }
@@ -794,14 +801,47 @@ h3 {
 
 .contacts {
   position: absolute;
-  width: 236px;
-  min-height: 253px;
-  right: 27px;
+  width: 252px;
+  min-height: 245px;
   top: 63px;
-  padding: 33px 26px;
+  left: 70%;
+  padding: 30px 25px;
   border-radius: 15px;
   background-color: #ffffff;
   color: #323232;
+}
+
+.contacts p {
+  margin: 0;
+  color: #323232;
+}
+
+.contacts p:nth-of-type(odd) {
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 40px;
+}
+
+.contacts p:nth-of-type(2) {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.contacts p:nth-of-type(4) {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.contacts-btn {
+  margin-top: 25px;
+}
+
+.contacts-btn a {
+  padding-left: 28px;
 }
 
 .main-footer {
