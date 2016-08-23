@@ -12,6 +12,132 @@ body {
   background-color: #849d8f;
 }
 
+body > input[type="radio"] {
+  display: none;
+}
+
+.site-wrapper {
+  min-width: 900px;
+  min-height: 2416px;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper:before,
+.site-wrapper:after {
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper:before {
+  background-image: url("../img/ice-slide-second.png");
+}
+
+.site-wrapper:after {
+  background-image: url("../img/ice-slide-third.png");
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.slider {
+  position: relative;
+  text-align: center;
+  padding-top: 308px;
+  margin-bottom: 30px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.slide-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  vertical-align: middle;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(61, 61, 46, 0.34), 0 2px 5px rgba(160, 32, 11, 0.76);
+  padding: 10px 41px;
+  border-radius: 50px;
+  background: #f26843;
+  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+}
+
+.slide-btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slide-btn:active {
+  background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 1);
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 22px;
+  left: 27px;
+  z-index: 20;
+  font-size: 0px;
+}
+
+.slider-controls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 2 0 rgba(0, 0, 0, 0.8);
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#first:checked ~ .site-wrapper #slide-first,
+#second:checked ~ .site-wrapper #slide-second,
+#third:checked ~ .site-wrapper #slide-third {
+  display: block;
+}
+
+#first:checked ~ .site-wrapper {
+   background: #849d8f url("../img/ice-slide-first.png") no-repeat top center;
+}
+
+#second:checked ~ .site-wrapper {
+  background: #8996a6 url("../img/ice-slide-second.png") no-repeat top center;
+}
+
+#third:checked ~ .site-wrapper {
+   background: #9d8b84 url("../img/ice-slide-third.png") no-repeat top center;
+}
+
+#first:checked ~ .site-wrapper label[for="first"],
+#second:checked ~ .site-wrapper label[for="second"],
+#third:checked ~ .site-wrapper label[for="third"] {
+  background-color: #ffffff;
+}
+
 h1, h2 {
   font-size: 35px;
   line-height: 41px;
@@ -436,73 +562,6 @@ h3 {
   z-index: 30;
 }
 
-/*Выполнено отображение первого слайда, переходы между слайдами не работают*/
-
-.slider {
-  width: 1200px;
-  min-height: 582px;
-/*  margin-top: -40px;*/
-}
-
-.slider input[type="radio"] {
-  display: none;
-}
-
-.slider-slides {
-  position: relative;
-  width: 300%;
-  background-color: burlywood;
-}
-
-.slider-inner {
-  overflow: hidden;
-}
-
-/*
-.slider figcaption {
-  position: absolute;
-  width: 670px;
-  top: 310px;
-  left: 269px;
-  font-size: 60px;
-  font-weight: bold;
-}
-*/
-
-.slide-first, .slide-second, .slide-third {
-  float: left;
-  width: 1200px;
-/*  background-color: #f1f097;*/
-}
-
-.slide-first figure {
-  width: 670px;
-/*  font-size: 60px;*/
-  font-weight: bold;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slider-controls label {
-  display: inline-block;
-  position: absolute;
-  top: 481px;
-  left: 36px;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 0 2 0 rgba(0, 0, 0, 0.8);
-  margin: 0 8px;
-  cursor: pointer;
-  background-color: #849d8f;
-}
-
-#first:checked ~ .slider-controls label[for="first"], #second:checked ~ .slider-controls label[for="second"], #third:checked ~ .slider-controls label[for="third"] {
-  background-color: #ffffff;
-}
-
 .promo {
   width: 1146px;
   min-height: 229px;
@@ -556,18 +615,25 @@ h3 {
   font-weight: bold;
   padding: 11px 23px;
   border-radius: 23px;
-  background-image:linear-gradient(#f26843, #e74a35);
+  background: #f26843;
+  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 
 .btn:hover {
-  background-image:linear-gradient(#f58669, #ec6f5e);
-  box-shadow: 0 1px 2px 0.0 #ac1000;
+  background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 1px 2px 0.0 rgba(172, 16, 0, 1);
 }
 
 .btn:active {
-  background-image:linear-gradient(#d74531, #e1613e);
-  box-shadow: inset 0 2px 2px 0 #942718;;
+  background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 1);
 }
 
 .breadcrumbs {
