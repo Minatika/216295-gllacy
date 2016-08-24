@@ -122,27 +122,19 @@
           </div>
         </div>
         <div class="fillers">
-          <h4>Наполнители:</h4>
-          <label>
-            <input type="checkbox" name="chocolate">
-            шоколадные
-          </label>
-          <label>
-            <input type="checkbox" name="sugar-topping">
-            сахарные присыпки
-          </label>
-          <label>
+          <div class="fillers-title">Наполнители:</div>
+          <div class="fillers-controls">
+            <input type="checkbox" name="chocolate" checked>
+            <label class="fillers-checkbox" for="chocolade">шоколадные</label>
+            <input type="checkbox" name="sugar-topping" checked>
+            <label class="fillers-checkbox" for="sugar-topping">сахарные присыпки</label>
             <input type="checkbox" name="fruit">
-            фрукты
-          </label>
-          <label>
+            <label class="fillers-checkbox" for="fruit">фрукты</label>
             <input type="checkbox" name="syrups">
-            сиропы
-          </label>
-          <label>
+            <label class="fillers-checkbox" for="syrups">сиропы</label>
             <input type="checkbox" name="jams">
-            джемы
-          </label>
+            <label class="fillers-checkbox" for="jams">джемы</label>
+          </div>
         </div>
         <button class="show" type="submit">Показать</button>
       </form>
