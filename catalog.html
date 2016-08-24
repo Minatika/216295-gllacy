@@ -84,18 +84,31 @@
       <a href="#">Каталог</a>
       <a class="current">Сливочное</a>
     </div>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="head">Сливочное мороженое</h1>
     <div class="filters">
-      <form class="sorting" action="">
-        <label for="sorting">Сортировка</label>
-        <select name="sorting" id="sorting">
-          <option value="popular">по популярности</option>
-          <option value="first-budget">сначала недорогие</option>
-          <option value="first highest">сначала дорогие</option>
-          <option value="fatness">по жирности</option>
-        </select>
-        <label for="price">Цена: 100 руб. - 500 руб.</label>
-        <input type="range" name="price" id="price" min="100" max="500">
+      <form class="filters-form" action="">
+        <div class="sorting">
+          <label for="sorting">Сортировка</label>
+          <select name="sorting" id="sorting">
+            <option value="popular">по популярности</option>
+            <option value="first-budget">сначала недорогие</option>
+            <option value="first highest">сначала дорогие</option>
+            <option value="fatness">по жирности</option>
+          </select>
+        </div>
+        <div class="filter-price">
+          <div class="price-controls">
+             <label class="min-price">Цена: <input name="min-price" type="text" value="100"> руб. &mdash; </label>
+            <label class="max-price"><input name="max-price" type="text" value="500"> руб.</label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+        </div>
         <div class="fatness">
           <h4>Жирность:</h4>
           <label for="fatness-0">0%</label>
@@ -130,7 +143,7 @@
             джемы
           </label>
         </div>
-        <a href="#">Применить</a>
+        <button class="show" type="submit">Показать</button>
       </form>
     </div>
     <div class="catalog">
