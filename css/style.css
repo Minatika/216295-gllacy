@@ -690,8 +690,24 @@ h3 {
   color: #ffbc9e;
 }
 
+.breadcrumbs a:hover::before {
+  background-color: rgba(249, 172, 159, 0.3);
+}
+
+.breadcrumbs a:hover::after {
+  color: #ffffff;
+}
+
 .breadcrumbs a:active {
   color: #ffbc9e;
+}
+
+.breadcrumbs a:active::before {
+  background-color: rgba(249, 172, 159, 0.3);
+}
+
+.breadcrumbs a:active::after {
+  color: #ffffff;
 }
 
 .filters {
@@ -720,7 +736,7 @@ h3 {
 .catalog {
   width: 1172px;
   min-height: 1050px;
-  margin: 0 auto;
+  margin: 0 auto 45px auto;
   font-size: 0;
 }
 
@@ -811,9 +827,55 @@ h3 {
 .paginator {
   width: 190px;
   min-height: 27px;
-  margin-left: auto;
-  margin-right: 27px;
-  background-color: darkseagreen;
+  margin: 0 27px 0 auto;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.paginator a {
+  display: inline-block;
+  min-width: 25px;
+  height: 25px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 4px;
+}
+
+.paginator .prev {
+  background: url("../img/prev.svg") no-repeat 50% 0;
+  margin-right: 7px;
+  font-size: 0;
+}
+
+.paginator .next {
+  background: url("../img/prev.svg") no-repeat 50% 100%;
+  transform: rotate(180deg);
+  margin-left: 5px;
+  font-size: 0;
+}
+
+.paginator .current {
+  background-color: #ffffff;
+  color: #323232;
+  border-radius: 50%;
+}
+
+.paginator .disabled {
+  opacity: 0.2;
+}
+
+.paginator a:hover {
+  background: #9db1a5;
+  border-radius: 50%;
+}
+
+.paginator a:active {
+  background: #ffffff;
+  border-radius: 50%;
+  color: #323232;
 }
 
 .feature {
