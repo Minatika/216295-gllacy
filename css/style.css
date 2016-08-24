@@ -290,6 +290,10 @@ h3 {
   background: #d07058;
 }
 
+.main-menu a.active::after {
+  display: none;
+}
+
 .main-menu > li:hover .wrapper-sub-menu {
   display: block;
 }
@@ -363,7 +367,7 @@ h3 {
   height: 44px;
   margin: 20px 15px;
   border-radius: 5px;
-  border: 1px solid #d3d3d2;
+  border: 1px solid rgba(178, 178, 178, 0.52);
   font-size: 16px;
   line-height: 24px;
   vertical-align: middle;
@@ -376,12 +380,18 @@ h3 {
   color: #323232;
 }
 
-.user-block .search:hover::before {
+.search:hover::before {
   content: url("../img/loupe-dark.svg");
 }
 
 .search:hover .wrapper-search-form {
   display: block;
+}
+
+.search-form input[type="search"]:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  border-radius: 5px;
+  margin-left: 14px;
 }
 
 .login {
@@ -637,12 +647,51 @@ h3 {
 }
 
 .breadcrumbs {
+  display: inline-block;
   width: 560px;
   min-height: 16px;
-  margin-top: 6px;
-  margin-left: 27px;
-  margin-bottom: 3px;
-  background-color: coral;
+  margin: 6px 0 3px 27px;
+}
+
+.breadcrumbs a {
+  position: relative;
+  float: left;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  padding-right: 22px;
+}
+
+.breadcrumbs a::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 22px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a::after {
+  position: absolute;
+  content: "»";
+  top: 0;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+}
+
+.breadcrumbs .current::before, .breadcrumbs .current::after {
+  display: none;
+}
+
+.breadcrumbs a:hover {
+  color: #ffbc9e;
+}
+
+.breadcrumbs a:active {
+  color: #ffbc9e;
 }
 
 .filters {
@@ -849,6 +898,7 @@ h3 {
 
 .post-header {
   margin-top: 5px;
+  padding-right: 200px;
 }
 
 .post-header a {
