@@ -720,16 +720,41 @@ h3 {
   width: 1146px;
   min-height: 132px;
   margin: 0 auto;
-  background-color: darkgray;
   margin-bottom: 35px;
 }
 
 .sorting {
   width: 193px;
   min-height: 73px;
+  float: left;
+  margin-top: 16px;
+}
+
+.sorting label {
+  margin-left: 16px;
+}
+
+select {
+  width: 193px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 0 16px;
+  margin-top: 8px;
+  -webkit-appearance: none;
+  background: rgba(248, 247, 244, 0.2) url(../img/select-arrow.svg) no-repeat 90% center;
+}
+
+select:hover {
+  background: rgba(255, 255, 255, 1) url(../img/select-arrow-dark.svg) no-repeat 90% center;
+  color: #323232;
 }
 
 .filter-price {
+  float: left;
   width: 218px;
 }
 
@@ -798,11 +823,18 @@ h3 {
 }
 
 .fatness {
+  float: left;
   width: 415px;
 }
 
 .fillers {
+  float: left;
   width: 703px;
+}
+
+.filters button {
+  float: left;
+
 }
 
 .popular {
