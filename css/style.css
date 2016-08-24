@@ -919,6 +919,7 @@ select:hover {
   border-radius: 3px;
   border: 1px solid #ffffff;
 }
+/*разобраться, почему не протавляется галка при выборе чек-бокса*/
 
 .fillers-controls input[type="checkbox"]:checked + .fillers-checkbox::after {
   position: absolute;
@@ -931,6 +932,18 @@ select:hover {
 
 .filters button {
   float: left;
+  width: 144px;
+  min-height: 32px;
+  margin: 36px 0 0 13px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 8px 29px;
+  border-radius: 18px;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  cursor: pointer;
 }
 
 .popular {
