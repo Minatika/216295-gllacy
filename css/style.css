@@ -955,7 +955,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   transform: rotate(45deg);
 }
 
-/*
+/* Чек-боксы изменены по демке, все равно галки не проставляются!
 .filler-checkbox::before {
   position: absolute;
   top: -1px;
