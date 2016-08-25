@@ -873,13 +873,19 @@ select:hover {
 
 .fatness-controls input[type="radio"]:checked + .fatness-radio::after {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 5px;
+  left: 5px;
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background-color: #f8f7f4;
+}
+
+.fatness-radio:hover::before {
+  top: -1px;
+  left: -1px;
+  border: 2px solid #ffffff;
 }
 
 .fillers {
@@ -1329,7 +1335,7 @@ select:hover {
 }
 
 .main-footer {
-  margin-top: 18px;
+  margin-top: 30px;
   padding-bottom: 26px;
 }
 
