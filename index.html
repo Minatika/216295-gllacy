@@ -173,17 +173,8 @@
                 <p>8 812 450-25-25</p>
                 <p>(с 10 до 20 ежедневно)</p>
                 <div class="contacts-btn">
-                  <a class="btn" href="#">Форма обратной связи</a>
+                  <a class="btn" href="#feedback">Форма обратной связи</a>
                 </div>
-              </div>
-              <div class="feedback">
-                <h2>Мы обязательно вам ответим!</h2>
-                <form action="" class="feedback-form" method="post">
-                  <input type="text" name="fullname" value="" placeholder="Как вас зовут?">
-                  <input type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа?">
-                  <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
-                  <button class="feedback-btn" type="button">Отправить</button>
-                </form>
               </div>
             </div>
           </section>
@@ -214,5 +205,16 @@
         </footer>
       </div>
     </div>
+    <div class="feedback" id="feedback">
+      <div class="feedback-title">Мы обязательно вам ответим!</div>
+      <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
+      <form action="" class="feedback-form" method="post">
+        <input type="text" name="fullname" value="" placeholder="Как вас зовут?">
+        <input type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа?">
+        <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="btn" type="button">Отправить</button>
+      </form>
+    </div>
+    <div class="overlay"></div>
   </body>
 </html>
