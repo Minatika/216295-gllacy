@@ -2,7 +2,7 @@
   font-family: "Roboto";
   src:
     local("Roboto-Regular"),
-    url("../font/roboto.woff") format('woff');
+    url("../font/roboto.woff2") format('woff2');
 }
 
 body {
@@ -1333,6 +1333,14 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   color: #353535;
 }
 
+.post-header a:hover {
+  color: #e84d37;
+}
+
+.post-header a:active {
+  color: #e84d37;
+}
+
 .delivery-border {
   position: relative;
   float: right;
@@ -1696,4 +1704,31 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 
 .footer-copyright a {
   color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-copyright a::after {
+  position: absolute;
+  content: "";
+  bottom: 13px;
+  left: 140px;
+  right: 42px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.footer-copyright a:hover {
+  color: #ffbc9e;
+}
+
+.footer-copyright a:hover::after {
+  background-color: rgba(249, 172, 159, 0.3);
+}
+
+.footer-copyright a:active {
+  color: #ffbc9e;
+}
+
+.footer-copyright a:active::after {
+  background-color: rgba(249, 172, 159, 0.3);
 }
