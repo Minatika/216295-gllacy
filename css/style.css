@@ -116,6 +116,10 @@ body > input[type="radio"] {
   background-color: transparent;
 }
 
+.slider-controls label:hover {
+  background: rgba(248, 247, 244, 0.4);
+}
+
 #first:checked ~ .site-wrapper #slide-first,
 #second:checked ~ .site-wrapper #slide-second,
 #third:checked ~ .site-wrapper #slide-third {
@@ -1425,8 +1429,7 @@ select:hover {
   display: inline-block;
   white-space: nowrap;
   width: 137px;
-  padding-left: 6px;
-  padding-bottom: 4px;
+  padding: 0 0 4px 6px;
 }
 
 .links li:nth-child(odd) {
@@ -1438,9 +1441,37 @@ select:hover {
 }
 
 .links a {
+  position: relative;
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.links a::after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.links a:hover {
+  color: #ffbc9e;
+}
+
+.links a:hover::after {
+  background-color: rgba(249, 172, 159, 0.3);
+}
+
+.links a:active {
+  color: #ffbc9e;
+}
+
+.links a:active::after {
+  background-color: rgba(249, 172, 159, 0.3);
 }
 
 .footer-copyright {
