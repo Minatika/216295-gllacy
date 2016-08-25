@@ -888,6 +888,10 @@ select:hover {
   border: 2px solid #ffffff;
 }
 
+input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disabled .fatness-radio::after {
+  opacity: 0.4;
+}
+
 .fillers {
   float: left;
   width: 703px;
@@ -909,7 +913,7 @@ select:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.fillers-checkbox {
+.filler-checkbox {
   position: relative;
   padding: 0 20px 0 30px;
   cursor: pointer;
@@ -919,7 +923,40 @@ select:hover {
   display: none;
 }
 
-.fillers-checkbox::before {
+.filler-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+}
+
+.filler-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  width: 6px;
+  height: 3px;
+  background-color: #ffffff;
+  transform: rotate(225deg);
+}
+
+.filler-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  width: 3px;
+  height: 11px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/*
+.filler-checkbox::before {
   position: absolute;
   top: -1px;
   left: 0;
@@ -929,15 +966,24 @@ select:hover {
   border-radius: 3px;
   border: 1px solid #ffffff;
 }
+*/
 /*разобраться, почему не протавляется галка при выборе чек-бокса*/
 
-.fillers-controls input[type="checkbox"]:checked + .fillers-checkbox::after {
+/*
+.fillers-controls input[type="checkbox"]:checked + .filler-checkbox::after {
   position: absolute;
   top: -4px;
   left: 0;
-  content: url("../img/checkbox.svg");
+  content: "";
   width: 18px;
   height: 18px;
+}
+*/
+
+.filler-checkbox:hover .checkbox-indicator {
+  border: 2px solid #ffffff;
+  top: -2px;
+  left: -1px;
 }
 
 .apply {
