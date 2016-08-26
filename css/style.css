@@ -1538,7 +1538,8 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 }
 
 .main-footer {
-  margin-top: 30px;
+  width: 1200px;
+  margin: 30px auto 0 auto;
   padding-bottom: 26px;
 }
 
