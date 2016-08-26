@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Roboto";
   src:
-    local("Roboto-Regular"),
+    local("Roboto-Regular"), local("Roboto"),
     url("../fonts/roboto.woff2") format("woff2");
 }
 
@@ -165,7 +165,7 @@ h3 {
   line-height: 30px;
   color: #323232;
   font-weight: normal;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -333,6 +333,7 @@ h3 {
   min-height: 64px;
   margin-right: 27px;
   font-size: 0;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .search {
@@ -819,12 +820,13 @@ h3 {
   margin-left: 16px;
 }
 
-select {
+.sorting select {
   width: 193px;
   height: 36px;
   line-height: 36px;
   font-size: 16px;
   color: #ffffff;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   border: none;
   border-radius: 16px;
   padding: 0 16px;
@@ -936,6 +938,7 @@ select:hover {
   position: relative;
   padding: 0 16px 0 30px;
   cursor: pointer;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .fatness-controls input[type="radio"] {
@@ -999,6 +1002,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   position: relative;
   padding: 0 20px 0 30px;
   cursor: pointer;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .fillers-controls input[type="checkbox"] {
@@ -1075,6 +1079,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   margin: 36px 0 0 13px;
   font-size: 16px;
   line-height: 18px;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   color: #ffffff;
   padding: 8px 29px;
   border-radius: 18px;
@@ -1142,6 +1147,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   line-height: 22px;
   text-decoration: none;
   color: #ffffff;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .catalog-item a.btn {
@@ -1327,6 +1333,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .posts-new p {
   font-size: 16px;
   line-height: 22px;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   margin: 0;
 }
 
