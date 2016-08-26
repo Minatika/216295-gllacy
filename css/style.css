@@ -1,15 +1,31 @@
 @font-face {
   font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
   src:
-    local("Roboto-Regular"), local("Roboto"),
-    url("../fonts/roboto.woff2") format("woff2");
+    local("Roboto-Bold"), local("Roboto Bold"),
+    url("../fonts/robotomedium.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Roboto-Regular"), local ("Roboto Regular")
+    url("../fonts/roboto.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-style: normal;
   src:
-    local("Roboto-Medium"),
-    url("../fonts/robotomedium.woff2") format("woff2");
+    local("Roboto-Medium"), local("Roboto Medium"),
+    url("../fonts/robotomedium.woff") format("woff");
+
 }
 
 body {
@@ -117,7 +133,7 @@ body > input[type="radio"] {
   height: 17px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 2 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
   margin-right: 8px;
   cursor: pointer;
   background-color: transparent;
@@ -725,7 +741,7 @@ h3 {
   background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 1px 2px 0.0 rgba(172, 16, 0, 1);
+  box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 1);
 }
 
 .btn:active {
@@ -1041,31 +1057,6 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   transform: rotate(45deg);
 }
 
-/* Чек-боксы изменены по демке, все равно галки не проставляются!
-.filler-checkbox::before {
-  position: absolute;
-  top: -1px;
-  left: 0;
-  content: "";
-  width: 18px;
-  height: 18px;
-  border-radius: 3px;
-  border: 1px solid #ffffff;
-}
-*/
-/*разобраться, почему не протавляется галка при выборе чек-бокса*/
-
-/*
-.fillers-controls input[type="checkbox"]:checked + .filler-checkbox::after {
-  position: absolute;
-  top: -4px;
-  left: 0;
-  content: "";
-  width: 18px;
-  height: 18px;
-}
-*/
-
 .filler-checkbox:hover .checkbox-indicator {
   border: 2px solid #ffffff;
   top: -2px;
@@ -1153,8 +1144,10 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .catalog-item a.btn {
   display: none;
   font-size: 18px;
-  width: 168px;
+  width: 167px;
+  min-height: 24px;
   margin: 10px auto 17px auto;
+  padding: 12px 13px;
 }
 
 .catalog-item img {
@@ -1486,14 +1479,6 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   border: none;
 }
 
-.feedback:target {
-  display: block;
-}
-
-.feedback:target .overlay {
-  display: block;
-}
-
 .map-and-contacts {
   width: 100%;
   height: 430px;
@@ -1598,31 +1583,32 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 
 .social-btn-tw:hover, .social-btn-in:hover, .social-btn-fb:hover, .social-btn-vk:hover {
   opacity: 1;
-  border: 4px solid rgba(255, 255, 255, 0.71);
+  box-shadow: inset 0 2px 1px 0 #888888, 0 0 0 1px rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.71);
 }
 
 .social-btn-tw:active {
   background: url(../img/twitter-active.svg) no-repeat;
-  box-shadow: inset 0 2px 1px 0 #888888;
-  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 2px 1px 0 #888888, 0 0 0 1px rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-btn-in:active {
   background: url(../img/instagram-active.svg) no-repeat;
-  box-shadow: inset 0 2px 1px 0 #888888;
-  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 2px 1px 0 #888888, 0 0 0 1px rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-btn-fb:active {
   background: url(../img/facebook-active.svg) no-repeat;
-  box-shadow: inset 0 2px 1px 0 #888888;
-  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 2px 1px 0 #888888, 0 0 0 1px rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-btn-vk:active {
   background: url(../img/vkontakte-active.svg) no-repeat;
-  box-shadow: inset 0 2px 1px 0 #888888;
-  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 2px 1px 0 #888888, 0 0 0 1px rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .footer-links {
