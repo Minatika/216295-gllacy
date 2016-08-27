@@ -209,9 +209,18 @@
       <div class="feedback-title">Мы обязательно вам ответим!</div>
       <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
       <form action="" class="feedback-form" method="post">
-        <input type="text" name="fullname" value="" placeholder="Как вас зовут?">
-        <input type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа?">
-        <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
+        <input type="text" name="fullname" required>
+        <div class="label-box-fullname">
+          <label>Как вас зовут?</label>
+        </div>
+        <input type="email" name="feedback-email" required>
+        <div class="label-box-email">
+          <label>Ваша почта для ответа?</label>
+        </div>
+        <textarea name="message" required></textarea>
+        <div class="label-box-message">
+          <label>Напишите что-нибудь...</label>
+        </div>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
