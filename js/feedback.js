@@ -12,6 +12,7 @@ var storageEmail = localStorage.getItem("email");
 link.addEventListener("click", function (e) {
   e.preventDefault();
   feedback.classList.add("feedback-show");
+  overlay.classList.add("overlay-show");
   if (storageName && storageEmail) {
     fullname.value = storageName;
     email.value = storageEmail;
@@ -25,6 +26,7 @@ close.addEventListener("click", function (e) {
   e.preventDefault();
   feedback.classList.remove("feedback-error");
   feedback.classList.remove("feedback-show");
+  overlay.classList.remove("overlay-show");
 });
 
 window.addEventListener("keydown", function (e) {
@@ -32,6 +34,7 @@ window.addEventListener("keydown", function (e) {
     if (feedback.classList.contains("feedback-show")) {
       feedback.classList.remove("feedback-show");
       feedback.classList.remove("feedback-error");
+      overlay.classList.remove("overlay-show");
     }
   }
 });
