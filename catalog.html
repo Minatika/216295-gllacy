@@ -32,24 +32,33 @@
           </ul>
         </nav>
       <div class="user-block">
-         <div class="search">
-            <div class="wrapper-search-form">
-              <form class="search-form" action="" >
-                <input type="search" name="search" placeholder="Что ищем?">
-              </form>
-            </div>
+        <div class="search">
+          <div class="wrapper-search-form">
+            <form class="search-form" action="" >
+              <input type="search" name="search" required>
+              <div class="label-box">
+                <label>Что ищем?</label>
+              </div>
+            </form>
           </div>
+        </div>
         <div class="login">Вход
-            <div class="wrapper-login-form">
-              <form class="login-form" action="">
-                <input type="email" name="login-email" value="" placeholder="Электронная почта">
-                <input type="password" name="login-password" value="" placeholder="Пароль">
-                <a class="btn" href="#">Войти</a>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
-            </div>
+          <div class="wrapper-login-form">
+            <form class="login-form" action="">
+              <input type="email" name="login-email" value="" required>
+              <div class="label-box-email">
+                <label>Электронная почта</label>
+              </div>
+              <input type="password" name="login-password" value="" required>
+              <div class="label-box-password">
+                <label>Пароль</label>
+              </div>
+              <button class="btn" type="submit" >Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
           </div>
+        </div>
         <div class="basket basket-full">2 товара
           <div class="wrapper-basket-form">
             <form class="basket-form">
@@ -264,10 +273,10 @@
   <footer class="main-footer">
     <div class="container clearfix">
       <div class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-in" href="#">Instagram</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
+        <a class="social-btn social-btn-tw" href="https://twitter.com/">Twitter</a>
+        <a class="social-btn social-btn-in" href="https://www.instagram.com/">Instagram</a>
+        <a class="social-btn social-btn-fb" href="https://ru-ru.facebook.com/">Facebook</a>
+        <a class="social-btn social-btn-vk" href="https://vk.com/">Vkontakte</a>
       </div>
       <div class="footer-links">
         <ul class="links">

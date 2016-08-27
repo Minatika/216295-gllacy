@@ -339,7 +339,6 @@ h3 {
   min-height: 64px;
   margin-right: 27px;
   font-size: 0;
-  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .search {
@@ -368,31 +367,54 @@ h3 {
   width: 341px;
   top: 16px;
   right: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+
 }
 
 .search-form {
   position: absolute;
-  min-height: 84px;
-  width: 341px;
+  min-height: 44px;
+  width: 311px;
   top: 20px;
   right: 0;
   z-index: 50;
   border-radius: 5px;
   background: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 20px 15px;
+
 }
 
 .search-form input[type="search"] {
   width: 310px;
   height: 44px;
-  margin: 20px 15px;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   font-size: 16px;
   line-height: 24px;
+  font-weight: bold;
   vertical-align: middle;
   padding: 0 15px;
   color: #323232;
+}
+
+.search-form .label-box {
+  position: absolute;
+  width: 310px;
+  min-height: 20px;
+}
+
+.search-form label {
+  position: absolute;
+  top: -33px;
+  left: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #999999;
+  pointer-events: none;
+  transition-duration: 0.2s;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .search:hover {
@@ -409,9 +431,31 @@ h3 {
 }
 
 .search-form input[type="search"]:hover {
-  border: 2px solid rgba(154, 154, 154, 0.52);
+  outline: none;
   border-radius: 5px;
-  margin-left: 14px;
+  border: 1px solid rgba(154, 154, 154, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.52);
+}
+
+.search-form input[type="search"]:focus {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
+}
+
+.search-form input[type="search"]:focus ~ .label-box label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+  transform: translateY(-23px);
+}
+
+.search-form input[type="search"]:valid ~ .label-box label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+  transform: translateY(-23px);
 }
 
 .login {
@@ -434,6 +478,7 @@ h3 {
   top: 6px;
   left: 16px;
   content: url("../img/login.svg");
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .wrapper-login-form {
@@ -456,6 +501,7 @@ h3 {
   border-radius: 5px;
   background: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .login-form input[type="email"], .login-form input[type="password"] {
@@ -465,9 +511,27 @@ h3 {
   font-size: 14px;
   margin-bottom: 20px;
   line-height: 24px;
-  border: 1px solid #d3d3d2;
+  outline: none;
+  border: 1px solid rgba(178, 178, 178, 0.52);
   vertical-align: middle;
   padding: 0 15px;
+}
+
+.login-form .label-box-email, .login-form .label-box-password {
+  position: absolute;
+  width: 205px;
+  min-height: 20px;
+}
+
+.login-form label {
+  position: absolute;
+  top: -54px;
+  left: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  pointer-events: none;
+  transition-duration: 0.2s;
 }
 
 .login-form a {
@@ -477,11 +541,21 @@ h3 {
   color: #323232;
 }
 
+.login-form a:hover {
+  color: #e84d37;
+}
+
+.login-form a:active {
+  color: #e84d37;
+}
+
 .login-form .btn {
   float: left;
   margin-right: 20px;
   font-size: 18px;
   color: #ffffff;
+  outline: none;
+  border: none;
 }
 
 .login:hover {
@@ -495,6 +569,34 @@ h3 {
 
 .login:hover .wrapper-login-form {
   display: block;
+}
+
+.login-form input[type="email"]:hover, .login-form input[type="password"]:hover {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(154, 154, 154, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.52);
+}
+
+.login-form input[type="email"]:focus, .login-form input[type="password"]:focus {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
+}
+
+.login-form input[type="email"]:focus ~ .label-box-email label, .login-form input[type="password"]:focus ~ .label-box-password label{
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+  transform: translateY(-23px);
+}
+
+.login-form input[type="email"]:valid ~ .label-box-email label, .login-form input[type="password"]:valid ~ .label-box-password label{
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+  transform: translateY(-23px);
 }
 
 .basket {
@@ -512,6 +614,7 @@ h3 {
   vertical-align: top;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .basket::before {
@@ -525,6 +628,7 @@ h3 {
 .basket-full {
   background: #f8f7f4;
   color: #323232;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .basket-full:before {
@@ -1376,21 +1480,66 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 }
 
 .form-delivery input[type="email"] {
-  display: inline-block;
+  float: left;
   width: 340px;
   height: 42px;
-  border-radius: 5px;
   font-size: 16px;
   line-height: 24px;
-  border: 1px solid #d3d3d2;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
   vertical-align: middle;
   padding: 0 13px;
   margin-top: 1px;
-  vertical-align: top;
+}
+
+.form-delivery .label-box {
+  position: absolute;
+  width: 340px;
+  min-height: 20px;
+}
+
+.form-delivery label {
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  pointer-events: none;
+  transition-duration: 0.2s;
+}
+
+.form-delivery input[type="email"]:hover {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(154, 154, 154, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.52);
+}
+
+.form-delivery input[type="email"]:focus ~ .label-box label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+  transform: translateY(-23px);
+}
+
+.form-delivery input[type="email"]:focus {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
+}
+
+.form-delivery input[type="email"]:valid ~ .label-box label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+  transform: translateY(-23px);
 }
 
 .form-delivery input[type="submit"] {
-  display: inline-block;
+  float: left;
   font-size: 18px;
   line-height: 24px;
   vertical-align: top;
@@ -1485,7 +1634,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .feedback-form .label-box-fullname, .feedback-form .label-box-email, .feedback-form .label-box-message {
   position: absolute;
   width: 235px;
-  height: 20px;
+  min-height: 20px;
 }
 
 .feedback-form label {

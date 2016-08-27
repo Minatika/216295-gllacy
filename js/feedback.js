@@ -7,7 +7,7 @@ var fullname = feedback.querySelector("[name=fullname]");
 var email = feedback.querySelector("[name=feedback-email]");
 var message = feedback.querySelector("[name=message]");
 var storageName = localStorage.getItem("fullname");
-var storageEmail = localStorage.getItem("email");
+var storageEmail = localStorage.getItem("feedback-email");
 
 link.addEventListener("click", function (e) {
   e.preventDefault();
@@ -47,6 +47,6 @@ form.addEventListener("submit", function (e) {
     feedback.classList.add("feedback-error");
   } else {
     localStorage.setItem("fullname", fullname.value);
-    localStorage.setItem("email", email.value);
+    localStorage.setItem("feedback-email", email.value);
   }
 });
