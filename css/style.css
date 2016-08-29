@@ -946,6 +946,7 @@ h3 {
 }
 
 select:hover {
+  outline: none;
   background: rgba(255, 255, 255, 1) url(../img/select-arrow-dark.svg) no-repeat 90% center;
   color: #323232;
 }
@@ -1304,6 +1305,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   font-size: 16px;
   line-height: 25px;
   color: #ffffff;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   text-decoration: none;
   text-align: center;
   margin-right: 4px;
@@ -1313,6 +1315,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   background: url("../img/prev.svg") no-repeat 50% 0;
   margin-right: 7px;
   font-size: 0;
+
 }
 
 .paginator .next {
@@ -1333,7 +1336,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 }
 
 .paginator a:hover {
-  background: #9db1a5;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
 
@@ -1341,6 +1344,29 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   background: #ffffff;
   border-radius: 50%;
   color: #323232;
+}
+
+.paginator .disabled a:hover, .paginator .disabled a:active {
+  background-color: transparent;
+  opacity: 0.2;
+}
+
+.paginator .prev:hover, .paginator .prev:active {
+  background: url("../img/prev.svg") no-repeat 50% 0;
+  margin-right: 7px;
+}
+
+.paginator .next:hover, .paginator .next:active {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background-position: 50% 50%;
+}
+
+.paginator .next:active {
+  background: url("../img/prev_dark.svg") no-repeat 50% 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .feature {
