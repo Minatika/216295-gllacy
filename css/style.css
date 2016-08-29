@@ -157,6 +157,15 @@ body > input[type="radio"] {
   background-color: #ffffff;
 }
 
+.catalog-wrapper {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, transparent 656px);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, transparent 656px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0, transparent 656px);
+}
+
 h1, h2 {
   font-size: 35px;
   line-height: 41px;
@@ -1152,7 +1161,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   transform: rotate(45deg);
 }
 
-.filler-checkbox:hover .checkbox-indicator {
+.filler-checkbox:hover input[type="checkbox"] + .checkbox-indicator {
   border: 2px solid #ffffff;
   top: -2px;
   left: -1px;
@@ -1199,7 +1208,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .catalog {
   width: 1172px;
   min-height: 1050px;
-  margin: 0 auto 45px auto;
+  margin: 0 auto 47px auto;
   font-size: 0;
 }
 
@@ -1234,15 +1243,17 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   text-decoration: none;
   color: #ffffff;
   font-family: "Roboto-Medium", "Arial", sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.catalog-item a.btn {
+.catalog-item .btn {
   display: none;
   font-size: 18px;
   width: 167px;
   min-height: 24px;
   margin: 10px auto 17px auto;
   padding: 12px 13px;
+  border: none;
 }
 
 .catalog-item img {
@@ -1286,6 +1297,10 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   z-index: 10;
 }
 
+.catalog-item:hover a {
+  border: none;
+}
+
 .catalog-item:hover .btn {
   display: block;
 }
@@ -1293,7 +1308,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .paginator {
   width: 190px;
   min-height: 27px;
-  margin: 0 27px 0 auto;
+  margin: 0 36px 0 auto;
   white-space: nowrap;
   font-size: 0;
 }
@@ -1788,12 +1803,20 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   padding-bottom: 26px;
 }
 
+.catalog-wrapper .main-footer::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 1px;
+  width: 1146px;
+  margin-left: 27px;
+}
+
 .footer-social {
   float: left;
   width: 266px;
   min-height: 60px;
-  margin-left: 28px;
-  margin-right: 26px;
+  margin: 13px 26px 0 28px;
   padding-top: 9px;
   font-size: 0;
 }
@@ -1861,9 +1884,9 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   float: left;
   width: 334px;
   min-height: 60px;
-  margin-left: 107px;
+  margin-left: 105px;
   margin-right: 145px;
-  margin-top: 6px;
+  margin-top: 19px;
 }
 
 .links {
@@ -1937,7 +1960,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   width: 267px;
   min-height: 60px;
   margin-right: 27px;
-  margin-top: 0;
+  margin-top: 15px;
 }
 
 .copyright-logo {
