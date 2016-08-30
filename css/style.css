@@ -231,7 +231,7 @@ h3 {
 
 .main-menu a {
   display: block;
-  padding: 8px 14px;
+  padding: 7px 14px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 600;
@@ -252,17 +252,17 @@ h3 {
 .wrapper-sub-menu {
   position: absolute;
   display: none;
-  left:-7px;
-  width: 142px;
+  left: 1px;
+  width: 143px;
   min-height: 176px;
 
 }
 
 .main-menu .sub-menu {
   position: absolute;
-  left: -7px;
-  top: 5px;
-  width: 142px;
+  left: -8px;
+  top: 6px;
+  width: 143px;
   min-height: 171px;
   z-index: 100;
   margin: 0;
@@ -270,21 +270,22 @@ h3 {
   list-style: none;
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .sub-menu a {
   font-size: 14px;
   line-height: 16px;
-  margin: 5px 0;
+  margin: 3px 0;
   color: #323232;
   text-decoration: none;
   font-weight: normal;
-  padding: 8px 20px;
+  padding: 7px 20px 5px 20px;
 }
 
 .sub-menu .new {
   font-weight: 600;
-  margin-bottom: 10px;
+  margin: 4px 0 10px 0;
 }
 
 .sub-menu .new::after {
@@ -298,7 +299,7 @@ h3 {
 }
 
 .main-menu a:hover {
-  border-radius: 14px;
+  border-radius: 16px;
   background: #f7f6f3;
   color: #333333;
   text-decoration: none;
@@ -312,7 +313,7 @@ h3 {
 }
 
 .main-menu a.active {
-  border-radius: 14px;
+  border-radius: 18px;
   text-decoration: none;
   background: #d07058;
 }
@@ -370,6 +371,7 @@ h3 {
 
 .wrapper-search-form {
   position: absolute;
+  display: none;
   display: none;
   min-height: 104px;
   width: 341px;
@@ -493,7 +495,7 @@ h3 {
   position: absolute;
   display: none;
   top: 100%;
-  right: 0;
+  right: -2px;
   width: 277px;
   min-height: 218px;
 }
@@ -513,8 +515,8 @@ h3 {
 }
 
 .login-form input[type="email"], .login-form input[type="password"] {
-  width: 205px;
-  height: 44px;
+  width: 209px;
+  height: 42px;
   border-radius: 5px;
   font-size: 14px;
   margin-bottom: 20px;
@@ -547,6 +549,7 @@ h3 {
   font-size: 13px;
   line-height: 24px;
   color: #323232;
+  margin-bottom: -5px;
 }
 
 .login-form a:hover {
@@ -564,6 +567,7 @@ h3 {
   color: #ffffff;
   outline: none;
   border: none;
+  padding: 11px 25px;
 }
 
 .login:hover {
@@ -680,13 +684,13 @@ h3 {
   line-height: 16px;
   color: #333333;
   vertical-align: top;
-  padding: 10px 15px 0 15px;
+  padding: 10px 10px 0 15px;
 }
 
 .basket-product td:first-child {
   position: relative;
   padding-left: 73px;
-  width: 217px;
+  width: 220px;
 }
 
 .basket-product td:first-child::before {
@@ -732,12 +736,14 @@ h3 {
   text-align: right;
   font-size: 15px;
   line-height: 18px;
-  font-weight: bold;
-  padding-top: 20px;
+  font-weight: 600;
+  padding: 20px 0 0 0;
 }
 
 .basket-form .btn {
   float: right;
+  margin-top: -3px;
+  padding: 11px 15px;
 }
 
 .basket:hover::before {
@@ -857,7 +863,7 @@ h3 {
   display: inline-block;
   width: 560px;
   min-height: 16px;
-  margin: 6px 0 0 27px;
+  margin: 5px 0 1px 27px;
 }
 
 .breadcrumbs a {
@@ -867,7 +873,7 @@ h3 {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  padding-right: 22px;
+  padding-right: 21px;
 }
 
 .breadcrumbs a::before {
@@ -931,7 +937,7 @@ h3 {
   width: 193px;
   min-height: 57px;
   float: left;
-  margin: 16px 16px 0 0;
+  margin: 17px 16px 0 0;
 }
 
 .sorting label {
@@ -939,19 +945,19 @@ h3 {
 }
 
 .sorting select {
-  width: 193px;
+  width: 192px;
   height: 36px;
   line-height: 36px;
   font-size: 16px;
   color: #ffffff;
   font-family: "Roboto-Medium", "Arial", sans-serif;
   border: none;
-  border-radius: 16px;
-  padding: 0 16px;
-  margin-top: 8px;
+  border-radius: 18px;
+  padding: 0 15px;
+  margin-top: 7px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: rgba(255, 255, 255, 0.2) url(../img/select-arrow.svg) no-repeat 90% center;
+  background: rgba(255, 255, 255, 0.2) url(../img/select-arrow.svg) no-repeat 92% center;
 }
 
 select:hover {
@@ -969,7 +975,7 @@ select:hover {
 
 .price-controls {
   font-size: 0;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .price-controls label {
@@ -1014,7 +1020,7 @@ select:hover {
 
 .range-controls .toggle {
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 0;
   cursor: pointer;
   width: 20px;
@@ -1025,11 +1031,11 @@ select:hover {
 }
 
 .range-controls .toggle-min {
-  left: 22px;
+  left: 33px;
 }
 
 .range-controls .toggle-max {
-  left: 117px;
+  left: 131px;
 }
 
 .fatness {
@@ -1101,11 +1107,11 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   float: left;
   width: 703px;
   min-height: 57px;
-  margin: 16px auto 0 0;
+  margin: 15px auto 0 0;
 }
 
 .fillers-title {
-  margin: 0 0 8px 16px;
+  margin: 0 0 7px 16px;
 }
 
 .fillers-controls {
@@ -1120,7 +1126,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 
 .filler-checkbox {
   position: relative;
-  padding: 0 20px 0 30px;
+  padding: 0 19px 0 30px;
   cursor: pointer;
   font-family: "Roboto-Medium", "Arial", sans-serif;
 }
@@ -1167,16 +1173,20 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   left: -1px;
 }
 
+input[type="checkbox"]:disabled .checkbox-indicator {
+  opacity: 0.4;
+}
+
 .apply {
   float: left;
   width: 144px;
   min-height: 32px;
-  margin: 36px 0 0 13px;
+  margin: 35px 0 0 13px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto-Medium", "Arial", sans-serif;
   color: #ffffff;
-  padding: 8px 29px;
+  padding: 7px 29px;
   border-radius: 18px;
   border: 2px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1248,11 +1258,11 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 
 .catalog-item .btn {
   display: none;
+  float: left;
   font-size: 18px;
-  width: 167px;
   min-height: 24px;
-  margin: 10px auto 17px auto;
-  padding: 12px 13px;
+  margin: 9px auto 17px 32px;
+  padding: 11px 17px;
   border: none;
 }
 
@@ -1263,10 +1273,10 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .price {
   position: absolute;
   top: 215px;
-  left: 13px;
+  left: 12px;
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
+  font-weight: 600;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -1308,7 +1318,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .paginator {
   width: 190px;
   min-height: 27px;
-  margin: 0 36px 0 auto;
+  margin: 0 36px 23px auto;
   white-space: nowrap;
   font-size: 0;
 }
@@ -1330,7 +1340,6 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   background: url("../img/prev.svg") no-repeat 50% 0;
   margin-right: 7px;
   font-size: 0;
-
 }
 
 .paginator .next {
@@ -1595,9 +1604,9 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   margin-top: -221px;
   z-index: 20;
   width: 429px;
-  height: 404px;
-  border-radius: 15px;
-  padding: 19px 25px 19px 23px;
+  height: 406px;
+  border-radius: 10px;
+  padding: 17px 25px 19px 23px;
   font-size: 16px;
   line-height: 24px;
   color: #323232;
@@ -1629,7 +1638,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 .feedback-title {
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .feedback-close {
@@ -1717,6 +1726,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   float: right;
   outline: none;
   border: none;
+  margin-top: -5px;
 }
 
 .overlay {
@@ -1785,7 +1795,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 }
 
 .contacts-btn {
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .contacts-btn a {
@@ -1794,8 +1804,8 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
 
 .main-footer {
   width: 1200px;
-  margin: 30px auto 0 auto;
-  padding-bottom: 26px;
+  margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 .catalog-wrapper .main-footer::before {
@@ -1812,7 +1822,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   width: 266px;
   min-height: 60px;
   margin: 13px 26px 0 28px;
-  padding-top: 9px;
+  padding-top: 12px;
   font-size: 0;
 }
 
@@ -1879,9 +1889,7 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   float: left;
   width: 334px;
   min-height: 60px;
-  margin-left: 105px;
-  margin-right: 145px;
-  margin-top: 19px;
+  margin: 23px 145px 0 105px;
 }
 
 .links {
@@ -1954,12 +1962,11 @@ input[type="radio"]:disabled .fatness-radio::before, input[type="radio"]:disable
   float: right;
   width: 267px;
   min-height: 60px;
-  margin-right: 27px;
-  margin-top: 15px;
+  margin: 17px 27px 0 auto;
 }
 
 .copyright-logo {
-  margin-left: 80px;
+  margin-left: 78px;
 }
 
 .footer-copyright p {
