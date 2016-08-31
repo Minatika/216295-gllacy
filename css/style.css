@@ -72,7 +72,7 @@ body > input[type="radio"] {
   margin: 0 auto 30px auto;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .slide-btn {
@@ -82,7 +82,7 @@ body > input[type="radio"] {
   line-height: 44px;
   color: #ffffff;
   vertical-align: middle;
-  font-weight: bold;
+  font-weight: 700;
   text-shadow: 0 0 5px rgba(61, 61, 46, 0.34), 0 2px 5px rgba(160, 32, 11, 0.76);
   padding: 10px 41px;
   border-radius: 50px;
@@ -279,7 +279,7 @@ h3 {
   margin: 3px 0;
   color: #323232;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 400;
   padding: 7px 20px 5px 20px;
 }
 
@@ -402,7 +402,7 @@ h3 {
   border: 1px solid rgba(178, 178, 178, 0.52);
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   vertical-align: middle;
   padding: 0 15px;
   color: #323232;
@@ -420,7 +420,7 @@ h3 {
   left: 15px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: #999999;
   pointer-events: none;
   transition-duration: 0.2s;
@@ -1788,14 +1788,14 @@ input[type="checkbox"]:disabled .checkbox-indicator {
 .contacts p:nth-of-type(2) {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 1px 0 18px 0;
 }
 
 .contacts p:nth-of-type(4) {
   font-size: 18px;
   line-height: 22px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 5px 0 2px 0;
 }
 
