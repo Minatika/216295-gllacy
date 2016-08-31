@@ -4,7 +4,7 @@
   font-style: normal;
   src:
     local("Roboto-Regular"), local("Roboto Regular"),
-    url("../fonts/Roboto-Regular.ttf") format("ttf");
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
 
 }
 
@@ -14,7 +14,7 @@
   font-style: normal;
   src:
     local("Roboto-Medium"), local("Roboto Medium"),
-    url("../fonts/Roboto-Medium.ttf") format("ttf");
+    url("../fonts/Roboto-Medium.ttf") format("truetype");
 }
 
 body {
@@ -72,7 +72,7 @@ body > input[type="radio"] {
   margin: 0 auto 30px auto;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .slide-btn {
@@ -169,7 +169,7 @@ h1, h2 {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Roboto", "Arial", sans-serif;
   margin: 0;
 }
@@ -178,7 +178,7 @@ h3 {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Roboto-Medium", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 10px;
@@ -234,7 +234,7 @@ h3 {
   padding: 7px 14px;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none;
 }
@@ -814,7 +814,7 @@ h3 {
 .promo p {
   margin-top: 15px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 22px;
   width: 515px;
 }
@@ -1924,7 +1924,7 @@ input[type="checkbox"]:disabled .checkbox-indicator {
 }
 
 .links li:first-child {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .links a {
