@@ -2,7 +2,7 @@ var container = document.querySelector("[id=yandex-map]");
 
 ymaps.ready(function ()  {
   var myMap = new ymaps.Map(container, {
-    center: [59.939239, 30.326853],
+    center: [59.939364, 30.329436],
     zoom: 16,
     controls: ["zoomControl"]
   });
