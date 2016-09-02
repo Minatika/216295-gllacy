@@ -6,20 +6,12 @@ var form = feedback.querySelector("form");
 var fullname = feedback.querySelector("[name=fullname]");
 var email = feedback.querySelector("[name=feedback-email]");
 var message = feedback.querySelector("[name=message]");
-var storageName = localStorage.getItem("fullname");
-var storageEmail = localStorage.getItem("feedback-email");
 
 link.addEventListener("click", function (e) {
   e.preventDefault();
   feedback.classList.add("feedback-show");
   overlay.classList.add("overlay-show");
-  if (storageName && storageEmail) {
-    fullname.value = storageName;
-    email.value = storageEmail;
-    message.focus;
-  } else {
-    fullname.focus();
-  }
+  fullname.focus();
 });
 
 close.addEventListener("click", function (e) {
@@ -45,8 +37,5 @@ form.addEventListener("submit", function (e) {
     feedback.classList.remove("feedback-error");
     feedback.offsetWidth = feedback.offsetWidth;
     feedback.classList.add("feedback-error");
-  } else {
-    localStorage.setItem("fullname", fullname.value);
-    localStorage.setItem("feedback-email", email.value);
   }
 });
