@@ -1324,7 +1324,7 @@ input[type="checkbox"]:disabled .checkbox-indicator {
 .paginator {
   width: 190px;
   min-height: 27px;
-  margin: 0 36px 23px auto;
+  margin: 0 36px 28px auto;
   white-space: nowrap;
   font-size: 0;
 }
