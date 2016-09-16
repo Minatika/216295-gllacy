@@ -1097,7 +1097,7 @@ select:hover {
 
 .fatness-radio:hover::before {
   top: -1px;
-  left: -2px;
+  left: -1px;
   border: 2px solid #ffffff;
 }
 
